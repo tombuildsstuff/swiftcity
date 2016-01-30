@@ -15,7 +15,7 @@ protocol ITeamCityConnection {
 
 class TeamCityConnection : ITeamCityConnection {
     
-    private let debugging = true
+    private let debugging = false
     
     private let serverUrl : String
     private let shouldConnectAsGuest : Bool
@@ -30,7 +30,6 @@ class TeamCityConnection : ITeamCityConnection {
     }
     
     required init(server: String, username: String, password: String) {
-        // TODO: support auth headers
         self.serverUrl = "\(server)/httpAuth"
         self.username = username
         self.password = password
@@ -48,6 +47,13 @@ class TeamCityConnection : ITeamCityConnection {
         if let accept = acceptHeader {
             request.addValue(accept, forHTTPHeaderField: "Accept")
         }
+        
+        if (!self.shouldConnectAsGuest) {
+            let auth = NSString(string: "\(self.username ?? ""):\(self.password ?? "")").dataUsingEncoding(NSUTF8StringEncoding)!
+            let encodedAuth = auth.base64EncodedStringWithOptions(NSDataBase64EncodingOptions.EncodingEndLineWithCarriageReturn)
+            request.addValue("Basic \(encodedAuth)", forHTTPHeaderField: "Authorization")
+        }
+        
         let config = NSURLSessionConfiguration.defaultSessionConfiguration()
         let session = NSURLSession(configuration: config)
         

@@ -14,7 +14,7 @@
 		24C77A1D1C5CFE4D00831741 /* Projects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C77A1C1C5CFE4D00831741 /* Projects.swift */; };
 		24C77A1F1C5D002400831741 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C77A1E1C5D002400831741 /* Project.swift */; };
 		24C77A211C5D393B00831741 /* BuildTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C77A201C5D393B00831741 /* BuildTypes.swift */; };
-		24C77A231C5D3BA400831741 /* BuildType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C77A221C5D3BA400831741 /* BuildType.swift */; };
+		24C77A231C5D3BA400831741 /* BuildTypeLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C77A221C5D3BA400831741 /* BuildTypeLocator.swift */; };
 		24CD0C9E1C5D4A3A004754CA /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CD0C9D1C5D4A3A004754CA /* Parameters.swift */; };
 		24CD0CA01C5D4B99004754CA /* Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CD0C9F1C5D4B99004754CA /* Parameter.swift */; };
 		24CD0CA21C5D4DE5004754CA /* VCSRoots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CD0CA11C5D4DE5004754CA /* VCSRoots.swift */; };
@@ -44,7 +44,7 @@
 		24C77A1C1C5CFE4D00831741 /* Projects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Projects.swift; path = Entities/Projects.swift; sourceTree = "<group>"; };
 		24C77A1E1C5D002400831741 /* Project.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Project.swift; path = Entities/Project.swift; sourceTree = "<group>"; };
 		24C77A201C5D393B00831741 /* BuildTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BuildTypes.swift; path = Entities/BuildTypes.swift; sourceTree = "<group>"; };
-		24C77A221C5D3BA400831741 /* BuildType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BuildType.swift; path = Entities/BuildType.swift; sourceTree = "<group>"; };
+		24C77A221C5D3BA400831741 /* BuildTypeLocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BuildTypeLocator.swift; path = Entities/BuildTypeLocator.swift; sourceTree = "<group>"; };
 		24CD0C9D1C5D4A3A004754CA /* Parameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Parameters.swift; path = Entities/Parameters.swift; sourceTree = "<group>"; };
 		24CD0C9F1C5D4B99004754CA /* Parameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Parameter.swift; path = Entities/Parameter.swift; sourceTree = "<group>"; };
 		24CD0CA11C5D4DE5004754CA /* VCSRoots.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VCSRoots.swift; path = Entities/VCSRoots.swift; sourceTree = "<group>"; };
@@ -93,7 +93,7 @@
 		24C77A121C5CDFB000831741 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				24C77A221C5D3BA400831741 /* BuildType.swift */,
+				24C77A221C5D3BA400831741 /* BuildTypeLocator.swift */,
 				24C77A201C5D393B00831741 /* BuildTypes.swift */,
 				24C77A1C1C5CFE4D00831741 /* Projects.swift */,
 				24C77A131C5CDFBC00831741 /* ProjectLocator.swift */,
@@ -189,7 +189,7 @@
 				24C77A1F1C5D002400831741 /* Project.swift in Sources */,
 				24CD0CA51C5D52B4004754CA /* ProjectsClient.swift in Sources */,
 				24C77A1D1C5CFE4D00831741 /* Projects.swift in Sources */,
-				24C77A231C5D3BA400831741 /* BuildType.swift in Sources */,
+				24C77A231C5D3BA400831741 /* BuildTypeLocator.swift in Sources */,
 				24C77A211C5D393B00831741 /* BuildTypes.swift in Sources */,
 				24C77A191C5CE74700831741 /* TeamCityClient.swift in Sources */,
 				24CD0CA91C5D5309004754CA /* AuthenticationClient.swift in Sources */,

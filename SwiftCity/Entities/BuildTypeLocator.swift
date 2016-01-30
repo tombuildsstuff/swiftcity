@@ -1,4 +1,4 @@
-struct BuildType {
+struct BuildTypeLocator {
 
     let id : String
     let name : String

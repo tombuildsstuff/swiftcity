@@ -2,7 +2,7 @@ struct BuildTypes {
     
     let count : Int
         
-    let buildTypes: [BuildType]
+    let buildTypes: [BuildTypeLocator]
         
     init?(dictionary: [String: AnyObject]) {
         guard let count = dictionary["count"] as? Int,
@@ -10,11 +10,11 @@ struct BuildTypes {
             return nil
         }
         
-        let buildTypes = buildTypesDictionary.map { (dictionary: [String: AnyObject]) -> BuildType? in
-            return BuildType(dictionary: dictionary)
-        }.filter { (type: BuildType?) -> Bool in
+        let buildTypes = buildTypesDictionary.map { (dictionary: [String: AnyObject]) -> BuildTypeLocator? in
+            return BuildTypeLocator(dictionary: dictionary)
+        }.filter { (type: BuildTypeLocator?) -> Bool in
             return type != nil
-        }.map { (type: BuildType?) -> BuildType in
+        }.map { (type: BuildTypeLocator?) -> BuildTypeLocator in
             return type!
         }
         

@@ -23,10 +23,16 @@ client.allProjects({ (projects) -> () in
 }) { (error: NSError) -> () in
     print("Projects Error: \(error)")
 }
-*/
 
 client.projectById("Example", successful: { (project) -> () in
     print("Project: \(project)")
+}) { (error: NSError) -> () in
+    print("Error: \(error)")
+}
+*/
+
+client.allBuildTypes({ (types: BuildTypes) -> () in
+    print(types)
 }) { (error: NSError) -> () in
     print("Error: \(error)")
 }

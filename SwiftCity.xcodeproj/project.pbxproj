@@ -18,6 +18,9 @@
 		24CD0C9E1C5D4A3A004754CA /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CD0C9D1C5D4A3A004754CA /* Parameters.swift */; };
 		24CD0CA01C5D4B99004754CA /* Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CD0C9F1C5D4B99004754CA /* Parameter.swift */; };
 		24CD0CA21C5D4DE5004754CA /* VCSRoots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CD0CA11C5D4DE5004754CA /* VCSRoots.swift */; };
+		24CD0CA51C5D52B4004754CA /* ProjectsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CD0CA41C5D52B4004754CA /* ProjectsClient.swift */; };
+		24CD0CA71C5D52EA004754CA /* BuildTypesClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CD0CA61C5D52EA004754CA /* BuildTypesClient.swift */; };
+		24CD0CA91C5D5309004754CA /* AuthenticationClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CD0CA81C5D5309004754CA /* AuthenticationClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,6 +48,9 @@
 		24CD0C9D1C5D4A3A004754CA /* Parameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Parameters.swift; path = Entities/Parameters.swift; sourceTree = "<group>"; };
 		24CD0C9F1C5D4B99004754CA /* Parameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Parameter.swift; path = Entities/Parameter.swift; sourceTree = "<group>"; };
 		24CD0CA11C5D4DE5004754CA /* VCSRoots.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VCSRoots.swift; path = Entities/VCSRoots.swift; sourceTree = "<group>"; };
+		24CD0CA41C5D52B4004754CA /* ProjectsClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectsClient.swift; path = Connection/Extensions/ProjectsClient.swift; sourceTree = "<group>"; };
+		24CD0CA61C5D52EA004754CA /* BuildTypesClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BuildTypesClient.swift; path = Connection/Extensions/BuildTypesClient.swift; sourceTree = "<group>"; };
+		24CD0CA81C5D5309004754CA /* AuthenticationClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthenticationClient.swift; path = Connection/Extensions/AuthenticationClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +108,21 @@
 		24C77A151C5CE2F500831741 /* Connection */ = {
 			isa = PBXGroup;
 			children = (
+				24CD0CA31C5D52A5004754CA /* Extensions */,
 				24C77A161C5CE30800831741 /* TeamCityConnection.swift */,
 				24C77A181C5CE74700831741 /* TeamCityClient.swift */,
 			);
 			name = Connection;
+			sourceTree = "<group>";
+		};
+		24CD0CA31C5D52A5004754CA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				24CD0CA81C5D5309004754CA /* AuthenticationClient.swift */,
+				24CD0CA61C5D52EA004754CA /* BuildTypesClient.swift */,
+				24CD0CA41C5D52B4004754CA /* ProjectsClient.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,13 +183,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				24C77A0C1C5CDFAD00831741 /* main.swift in Sources */,
+				24CD0CA71C5D52EA004754CA /* BuildTypesClient.swift in Sources */,
 				24CD0CA01C5D4B99004754CA /* Parameter.swift in Sources */,
 				24C77A171C5CE30800831741 /* TeamCityConnection.swift in Sources */,
 				24C77A1F1C5D002400831741 /* Project.swift in Sources */,
+				24CD0CA51C5D52B4004754CA /* ProjectsClient.swift in Sources */,
 				24C77A1D1C5CFE4D00831741 /* Projects.swift in Sources */,
 				24C77A231C5D3BA400831741 /* BuildType.swift in Sources */,
 				24C77A211C5D393B00831741 /* BuildTypes.swift in Sources */,
 				24C77A191C5CE74700831741 /* TeamCityClient.swift in Sources */,
+				24CD0CA91C5D5309004754CA /* AuthenticationClient.swift in Sources */,
 				24C77A141C5CDFBC00831741 /* ProjectLocator.swift in Sources */,
 				24CD0CA21C5D4DE5004754CA /* VCSRoots.swift in Sources */,
 				24CD0C9E1C5D4A3A004754CA /* Parameters.swift in Sources */,

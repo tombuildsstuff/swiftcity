@@ -36,6 +36,8 @@
 		24CD0CC51C5F348D004754CA /* BuildTrigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CD0CC41C5F348D004754CA /* BuildTrigger.swift */; };
 		24CD0CC71C5F36F2004754CA /* SnapshotDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CD0CC61C5F36F2004754CA /* SnapshotDependency.swift */; };
 		24CD0CC91C5F3702004754CA /* SnapshotDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CD0CC81C5F3702004754CA /* SnapshotDependencies.swift */; };
+		24CD0CCB1C5F3A96004754CA /* ArtifactDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CD0CCA1C5F3A96004754CA /* ArtifactDependencies.swift */; };
+		24CD0CCD1C5F3B0F004754CA /* ArtifactDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CD0CCC1C5F3B0F004754CA /* ArtifactDependency.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -81,6 +83,8 @@
 		24CD0CC41C5F348D004754CA /* BuildTrigger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BuildTrigger.swift; path = Entities/BuildTrigger.swift; sourceTree = "<group>"; };
 		24CD0CC61C5F36F2004754CA /* SnapshotDependency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotDependency.swift; path = Entities/SnapshotDependency.swift; sourceTree = "<group>"; };
 		24CD0CC81C5F3702004754CA /* SnapshotDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotDependencies.swift; path = Entities/SnapshotDependencies.swift; sourceTree = "<group>"; };
+		24CD0CCA1C5F3A96004754CA /* ArtifactDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArtifactDependencies.swift; path = Entities/ArtifactDependencies.swift; sourceTree = "<group>"; };
+		24CD0CCC1C5F3B0F004754CA /* ArtifactDependency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArtifactDependency.swift; path = Entities/ArtifactDependency.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,8 @@
 		24C77A121C5CDFB000831741 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				24CD0CCC1C5F3B0F004754CA /* ArtifactDependency.swift */,
+				24CD0CCA1C5F3A96004754CA /* ArtifactDependencies.swift */,
 				24CD0CC01C5F3096004754CA /* BuildFeature.swift */,
 				24CD0CBE1C5F2FBC004754CA /* BuildFeatures.swift */,
 				24CD0CBA1C5F2728004754CA /* BuildQueue.swift */,
@@ -241,6 +247,7 @@
 				24CD0CB91C5F26CA004754CA /* BuildQueueClient.swift in Sources */,
 				24C77A1D1C5CFE4D00831741 /* Projects.swift in Sources */,
 				24CD0CB11C5D5C36004754CA /* VCSRootEntry.swift in Sources */,
+				24CD0CCB1C5F3A96004754CA /* ArtifactDependencies.swift in Sources */,
 				24CD0CBD1C5F2C2E004754CA /* BuildQueueItem.swift in Sources */,
 				24CD0CC31C5F33B8004754CA /* BuildTriggers.swift in Sources */,
 				24CD0CC91C5F3702004754CA /* SnapshotDependencies.swift in Sources */,
@@ -250,6 +257,7 @@
 				24C77A211C5D393B00831741 /* BuildTypes.swift in Sources */,
 				24CD0CC11C5F3096004754CA /* BuildFeature.swift in Sources */,
 				24C77A191C5CE74700831741 /* TeamCityClient.swift in Sources */,
+				24CD0CCD1C5F3B0F004754CA /* ArtifactDependency.swift in Sources */,
 				24CD0CC71C5F36F2004754CA /* SnapshotDependency.swift in Sources */,
 				24CD0CA91C5D5309004754CA /* AuthenticationClient.swift in Sources */,
 				24C77A141C5CDFBC00831741 /* ProjectLocator.swift in Sources */,

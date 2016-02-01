@@ -8,7 +8,9 @@ struct BuildType {
     let features: BuildFeatures?
     let triggers: BuildTriggers?
     let snapshotDependencies: SnapshotDependencies?
+    let artifactDependencies: ArtifactDependencies?
     
+
     init?(dictionary: [String: AnyObject]) {
         guard let locator = BuildTypeLocator(dictionary: dictionary) else {
             return nil
@@ -30,8 +32,7 @@ struct BuildType {
         self.features = map(dictionary["features"] as? [String: AnyObject], builder: BuildFeatures.init)
         self.triggers = map(dictionary["triggers"] as? [String: AnyObject], builder: BuildTriggers.init)
         self.snapshotDependencies = map(dictionary["snapshot-dependencies"] as? [String: AnyObject], builder: SnapshotDependencies.init)
-            
-        
+        self.artifactDependencies = map(dictionary["artifact-dependencies"] as? [String: AnyObject], builder: ArtifactDependencies.init)
     }
     
 }

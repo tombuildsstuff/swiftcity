@@ -1,15 +1,15 @@
 struct BuildType {
     
+    let agentRequirements: AgentRequirements?
+    let artifactDependencies: ArtifactDependencies?
     let buildType : BuildTypeLocator
     let entries: VCSRootEntries?
-    let settings: Parameters?
-    let parameters: Parameters?
-    let steps : BuildSteps?
     let features: BuildFeatures?
-    let triggers: BuildTriggers?
+    let parameters: Parameters?
+    let settings: Parameters?
     let snapshotDependencies: SnapshotDependencies?
-    let artifactDependencies: ArtifactDependencies?
-    
+    let steps : BuildSteps?
+    let triggers: BuildTriggers?
 
     init?(dictionary: [String: AnyObject]) {
         guard let locator = BuildTypeLocator(dictionary: dictionary) else {
@@ -24,15 +24,17 @@ struct BuildType {
             return builder(dictionary: properties)
         }
         
+        self.agentRequirements = map(dictionary["agent-requirements"] as? [String: AnyObject], builder: AgentRequirements.init)
+        self.artifactDependencies = map(dictionary["artifact-dependencies"] as? [String: AnyObject], builder: ArtifactDependencies.init)
         self.buildType = locator
         self.entries = map(dictionary["vcs-root-entries"] as? [String: AnyObject], builder: VCSRootEntries.init)
-        self.settings = map(dictionary["settings"] as? [String: AnyObject], builder: Parameters.init)
-        self.parameters = map(dictionary["parameters"] as? [String: AnyObject], builder: Parameters.init)
-        self.steps = map(dictionary["steps"] as? [String: AnyObject], builder: BuildSteps.init)
         self.features = map(dictionary["features"] as? [String: AnyObject], builder: BuildFeatures.init)
-        self.triggers = map(dictionary["triggers"] as? [String: AnyObject], builder: BuildTriggers.init)
+        self.parameters = map(dictionary["parameters"] as? [String: AnyObject], builder: Parameters.init)
+        self.settings = map(dictionary["settings"] as? [String: AnyObject], builder: Parameters.init)
         self.snapshotDependencies = map(dictionary["snapshot-dependencies"] as? [String: AnyObject], builder: SnapshotDependencies.init)
-        self.artifactDependencies = map(dictionary["artifact-dependencies"] as? [String: AnyObject], builder: ArtifactDependencies.init)
+        self.steps = map(dictionary["steps"] as? [String: AnyObject], builder: BuildSteps.init)
+        self.triggers = map(dictionary["triggers"] as? [String: AnyObject], builder: BuildTriggers.init)
+        
     }
     
 }

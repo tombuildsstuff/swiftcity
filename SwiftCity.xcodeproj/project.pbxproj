@@ -38,6 +38,8 @@
 		24CD0CC91C5F3702004754CA /* SnapshotDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CD0CC81C5F3702004754CA /* SnapshotDependencies.swift */; };
 		24CD0CCB1C5F3A96004754CA /* ArtifactDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CD0CCA1C5F3A96004754CA /* ArtifactDependencies.swift */; };
 		24CD0CCD1C5F3B0F004754CA /* ArtifactDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CD0CCC1C5F3B0F004754CA /* ArtifactDependency.swift */; };
+		24CD0CCF1C5F40F2004754CA /* AgentRequirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CD0CCE1C5F40F2004754CA /* AgentRequirement.swift */; };
+		24CD0CD11C5F4113004754CA /* AgentRequirements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CD0CD01C5F4113004754CA /* AgentRequirements.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -85,6 +87,8 @@
 		24CD0CC81C5F3702004754CA /* SnapshotDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotDependencies.swift; path = Entities/SnapshotDependencies.swift; sourceTree = "<group>"; };
 		24CD0CCA1C5F3A96004754CA /* ArtifactDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArtifactDependencies.swift; path = Entities/ArtifactDependencies.swift; sourceTree = "<group>"; };
 		24CD0CCC1C5F3B0F004754CA /* ArtifactDependency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArtifactDependency.swift; path = Entities/ArtifactDependency.swift; sourceTree = "<group>"; };
+		24CD0CCE1C5F40F2004754CA /* AgentRequirement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AgentRequirement.swift; path = Entities/AgentRequirement.swift; sourceTree = "<group>"; };
+		24CD0CD01C5F4113004754CA /* AgentRequirements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AgentRequirements.swift; path = Entities/AgentRequirements.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +133,8 @@
 			children = (
 				24CD0CCC1C5F3B0F004754CA /* ArtifactDependency.swift */,
 				24CD0CCA1C5F3A96004754CA /* ArtifactDependencies.swift */,
+				24CD0CD01C5F4113004754CA /* AgentRequirements.swift */,
+				24CD0CCE1C5F40F2004754CA /* AgentRequirement.swift */,
 				24CD0CC01C5F3096004754CA /* BuildFeature.swift */,
 				24CD0CBE1C5F2FBC004754CA /* BuildFeatures.swift */,
 				24CD0CBA1C5F2728004754CA /* BuildQueue.swift */,
@@ -237,6 +243,7 @@
 				24C77A0C1C5CDFAD00831741 /* main.swift in Sources */,
 				24CD0CA71C5D52EA004754CA /* BuildTypesClient.swift in Sources */,
 				24CD0CB71C5D6BDA004754CA /* BuildSteps.swift in Sources */,
+				24CD0CD11C5F4113004754CA /* AgentRequirements.swift in Sources */,
 				24CD0CB51C5D6A22004754CA /* BuildStepSummary.swift in Sources */,
 				24CD0CAF1C5D5BAC004754CA /* VCSRoot.swift in Sources */,
 				24CD0CA01C5D4B99004754CA /* Parameter.swift in Sources */,
@@ -250,6 +257,7 @@
 				24CD0CCB1C5F3A96004754CA /* ArtifactDependencies.swift in Sources */,
 				24CD0CBD1C5F2C2E004754CA /* BuildQueueItem.swift in Sources */,
 				24CD0CC31C5F33B8004754CA /* BuildTriggers.swift in Sources */,
+				24CD0CCF1C5F40F2004754CA /* AgentRequirement.swift in Sources */,
 				24CD0CC91C5F3702004754CA /* SnapshotDependencies.swift in Sources */,
 				24CD0CC51C5F348D004754CA /* BuildTrigger.swift in Sources */,
 				24C77A231C5D3BA400831741 /* BuildTypeLocator.swift in Sources */,

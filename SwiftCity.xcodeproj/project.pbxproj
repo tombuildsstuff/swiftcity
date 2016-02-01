@@ -32,6 +32,8 @@
 		24CD0CBD1C5F2C2E004754CA /* BuildQueueItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CD0CBC1C5F2C2E004754CA /* BuildQueueItem.swift */; };
 		24CD0CBF1C5F2FBC004754CA /* BuildFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CD0CBE1C5F2FBC004754CA /* BuildFeatures.swift */; };
 		24CD0CC11C5F3096004754CA /* BuildFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CD0CC01C5F3096004754CA /* BuildFeature.swift */; };
+		24CD0CC31C5F33B8004754CA /* BuildTriggers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CD0CC21C5F33B8004754CA /* BuildTriggers.swift */; };
+		24CD0CC51C5F348D004754CA /* BuildTrigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CD0CC41C5F348D004754CA /* BuildTrigger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -73,6 +75,8 @@
 		24CD0CBC1C5F2C2E004754CA /* BuildQueueItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BuildQueueItem.swift; path = Entities/BuildQueueItem.swift; sourceTree = "<group>"; };
 		24CD0CBE1C5F2FBC004754CA /* BuildFeatures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BuildFeatures.swift; path = Entities/BuildFeatures.swift; sourceTree = "<group>"; };
 		24CD0CC01C5F3096004754CA /* BuildFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BuildFeature.swift; path = Entities/BuildFeature.swift; sourceTree = "<group>"; };
+		24CD0CC21C5F33B8004754CA /* BuildTriggers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BuildTriggers.swift; path = Entities/BuildTriggers.swift; sourceTree = "<group>"; };
+		24CD0CC41C5F348D004754CA /* BuildTrigger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BuildTrigger.swift; path = Entities/BuildTrigger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +125,8 @@
 				24CD0CBC1C5F2C2E004754CA /* BuildQueueItem.swift */,
 				24CD0CB61C5D6BDA004754CA /* BuildSteps.swift */,
 				24CD0CB41C5D6A22004754CA /* BuildStepSummary.swift */,
+				24CD0CC41C5F348D004754CA /* BuildTrigger.swift */,
+				24CD0CC21C5F33B8004754CA /* BuildTriggers.swift */,
 				24CD0CAA1C5D58B1004754CA /* BuildType.swift */,
 				24C77A221C5D3BA400831741 /* BuildTypeLocator.swift */,
 				24C77A201C5D393B00831741 /* BuildTypes.swift */,
@@ -230,6 +236,8 @@
 				24C77A1D1C5CFE4D00831741 /* Projects.swift in Sources */,
 				24CD0CB11C5D5C36004754CA /* VCSRootEntry.swift in Sources */,
 				24CD0CBD1C5F2C2E004754CA /* BuildQueueItem.swift in Sources */,
+				24CD0CC31C5F33B8004754CA /* BuildTriggers.swift in Sources */,
+				24CD0CC51C5F348D004754CA /* BuildTrigger.swift in Sources */,
 				24C77A231C5D3BA400831741 /* BuildTypeLocator.swift in Sources */,
 				24CD0CAD1C5D5AA9004754CA /* VCSRootEntries.swift in Sources */,
 				24C77A211C5D393B00831741 /* BuildTypes.swift in Sources */,

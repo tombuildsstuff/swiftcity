@@ -8,7 +8,8 @@
 
 import Foundation
 
-let connection = TeamCityConnection(server: "http://172.16.85.129")
+//let connection = TeamCityConnection(server: "http://172.16.85.129")
+let connection = TeamCityConnection(server: "http://172.16.85.129", username: "example_api_user", password: "password")
 let client = TeamCityClient(connection: connection)
 
 /*
@@ -29,10 +30,16 @@ client.projectById("Example", successful: { (project) -> () in
 }) { (error: NSError) -> () in
     print("Error: \(error)")
 }
-*/
 
 client.allBuildTypes({ (types: BuildTypes) -> () in
     print(types)
+}) { (error: NSError) -> () in
+    print("Error: \(error)")
+}
+*/
+
+client.buildTypesById("Example_BuildConfig", successful: { (type: BuildType) -> () in
+    print(type)
 }) { (error: NSError) -> () in
     print("Error: \(error)")
 }

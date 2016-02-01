@@ -1,12 +1,12 @@
 struct Parameters {
+
     let count : Int
-    let href : String
+    let href : String?
     let properties : [Parameter]
     
     init?(dictionary: [String: AnyObject]) {
         
         guard let count = dictionary["count"] as? Int,
-              let href = dictionary["href"] as? String,
               let propertiesDictionary = dictionary["property"] as? [[String: AnyObject]] else {
                 return nil
         }
@@ -23,8 +23,11 @@ struct Parameters {
             return nil
         }
         
+        let href = dictionary["href"] as? String
+        
         self.count = count
         self.href = href
         self.properties = properties
     }
+
 }

@@ -5,7 +5,7 @@ struct BuildTypeLocator {
     let projectName: String
     let projectId: String
     let href: String
-    let templateFlag : Bool
+    let templateFlag : Bool?
     let webUrl: String
     
     init?(dictionary: [String: AnyObject]) {
@@ -19,7 +19,7 @@ struct BuildTypeLocator {
                 return nil
         }
         
-        let isTemplate = dictionary["templateFlag"] as? Bool ?? false
+        let isTemplate = dictionary["templateFlag"] as? Bool
         
         self.id = id
         self.name = name

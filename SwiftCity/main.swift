@@ -36,10 +36,16 @@ client.allBuildTypes({ (types: BuildTypes) -> () in
 }) { (error: NSError) -> () in
     print("Error: \(error)")
 }
-*/
 
 client.buildTypesById("Example_BuildConfig", successful: { (type: BuildType) -> () in
     print(type)
+}) { (error: NSError) -> () in
+    print("Error: \(error)")
+}
+*/
+
+client.buildQueue({ (queue: BuildQueue) -> () in
+    print(queue.queue)
 }) { (error: NSError) -> () in
     print("Error: \(error)")
 }

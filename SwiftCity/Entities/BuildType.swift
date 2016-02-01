@@ -7,6 +7,7 @@ struct BuildType {
     let steps : BuildSteps?
     let features: BuildFeatures?
     let triggers: BuildTriggers?
+    let snapshotDependencies: SnapshotDependencies?
     
     init?(dictionary: [String: AnyObject]) {
         guard let locator = BuildTypeLocator(dictionary: dictionary) else {
@@ -28,6 +29,9 @@ struct BuildType {
         self.steps = map(dictionary["steps"] as? [String: AnyObject], builder: BuildSteps.init)
         self.features = map(dictionary["features"] as? [String: AnyObject], builder: BuildFeatures.init)
         self.triggers = map(dictionary["triggers"] as? [String: AnyObject], builder: BuildTriggers.init)
+        self.snapshotDependencies = map(dictionary["snapshot-dependencies"] as? [String: AnyObject], builder: SnapshotDependencies.init)
+            
+        
     }
     
 }

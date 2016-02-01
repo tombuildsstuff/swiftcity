@@ -39,7 +39,7 @@ client.allBuildTypes({ (types: BuildTypes) -> () in
 */
 
 client.buildTypesById("Example_BuildConfig", successful: { (type: BuildType) -> () in
-    print(type.triggers)
+    print(type.snapshotDependencies)
 }) { (error: NSError) -> () in
     print("Error: \(error)")
 }

@@ -30,6 +30,8 @@
 		24CD0CB91C5F26CA004754CA /* BuildQueueClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CD0CB81C5F26CA004754CA /* BuildQueueClient.swift */; };
 		24CD0CBB1C5F2728004754CA /* BuildQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CD0CBA1C5F2728004754CA /* BuildQueue.swift */; };
 		24CD0CBD1C5F2C2E004754CA /* BuildQueueItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CD0CBC1C5F2C2E004754CA /* BuildQueueItem.swift */; };
+		24CD0CBF1C5F2FBC004754CA /* BuildFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CD0CBE1C5F2FBC004754CA /* BuildFeatures.swift */; };
+		24CD0CC11C5F3096004754CA /* BuildFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CD0CC01C5F3096004754CA /* BuildFeature.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -69,6 +71,8 @@
 		24CD0CB81C5F26CA004754CA /* BuildQueueClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BuildQueueClient.swift; path = Connection/Extensions/BuildQueueClient.swift; sourceTree = "<group>"; };
 		24CD0CBA1C5F2728004754CA /* BuildQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BuildQueue.swift; path = Entities/BuildQueue.swift; sourceTree = "<group>"; };
 		24CD0CBC1C5F2C2E004754CA /* BuildQueueItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BuildQueueItem.swift; path = Entities/BuildQueueItem.swift; sourceTree = "<group>"; };
+		24CD0CBE1C5F2FBC004754CA /* BuildFeatures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BuildFeatures.swift; path = Entities/BuildFeatures.swift; sourceTree = "<group>"; };
+		24CD0CC01C5F3096004754CA /* BuildFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BuildFeature.swift; path = Entities/BuildFeature.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,8 @@
 		24C77A121C5CDFB000831741 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				24CD0CC01C5F3096004754CA /* BuildFeature.swift */,
+				24CD0CBE1C5F2FBC004754CA /* BuildFeatures.swift */,
 				24CD0CBA1C5F2728004754CA /* BuildQueue.swift */,
 				24CD0CBC1C5F2C2E004754CA /* BuildQueueItem.swift */,
 				24CD0CB61C5D6BDA004754CA /* BuildSteps.swift */,
@@ -227,9 +233,11 @@
 				24C77A231C5D3BA400831741 /* BuildTypeLocator.swift in Sources */,
 				24CD0CAD1C5D5AA9004754CA /* VCSRootEntries.swift in Sources */,
 				24C77A211C5D393B00831741 /* BuildTypes.swift in Sources */,
+				24CD0CC11C5F3096004754CA /* BuildFeature.swift in Sources */,
 				24C77A191C5CE74700831741 /* TeamCityClient.swift in Sources */,
 				24CD0CA91C5D5309004754CA /* AuthenticationClient.swift in Sources */,
 				24C77A141C5CDFBC00831741 /* ProjectLocator.swift in Sources */,
+				24CD0CBF1C5F2FBC004754CA /* BuildFeatures.swift in Sources */,
 				24CD0CA21C5D4DE5004754CA /* VCSRoots.swift in Sources */,
 				24CD0C9E1C5D4A3A004754CA /* Parameters.swift in Sources */,
 			);

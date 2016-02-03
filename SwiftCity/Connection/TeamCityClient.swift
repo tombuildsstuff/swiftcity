@@ -10,7 +10,7 @@ import Foundation
 
 public class TeamCityClient {
 
-    let connection : ITeamCityConnection
+    public let connection : ITeamCityConnection
 
     public init(connection: ITeamCityConnection) {
         self.connection = connection

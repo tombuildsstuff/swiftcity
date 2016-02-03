@@ -1,4 +1,4 @@
-struct Projects {
+public struct Projects {
 
     public let count : Int
     public let href : String?

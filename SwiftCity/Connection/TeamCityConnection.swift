@@ -1,6 +1,6 @@
 import Foundation
 
-protocol ITeamCityConnection {
+public protocol ITeamCityConnection {
 
     init(server: String)
     init(server: String, username: String, password: String)
@@ -36,11 +36,11 @@ public class TeamCityConnection : ITeamCityConnection {
         self.shouldConnectAsGuest = false
     }
 
-    func get(endpoint: String, done: (data: NSData) -> (), error: (NSError) -> ()) {
+    public func get(endpoint: String, done: (data: NSData) -> (), error: (NSError) -> ()) {
         self.get(endpoint, acceptHeader: nil, done: done, error: error)
     }
 
-    func get(endpoint: String, acceptHeader: String?, done: (data: NSData) -> (), error: (NSError) -> ()) {
+    public func get(endpoint: String, acceptHeader: String?, done: (data: NSData) -> (), error: (NSError) -> ()) {
         let requestUrl = "\(self.serverUrl)\(endpoint)"
         let url = NSURL(string: requestUrl)!
         let request = NSMutableURLRequest(URL: url)
@@ -78,7 +78,7 @@ public class TeamCityConnection : ITeamCityConnection {
         task.resume()
     }
 
-    func post<T>(endpoint: String, body: T, done: (statusCode: Int, error: NSError?)) {
+    public func post<T>(endpoint: String, body: T, done: (statusCode: Int, error: NSError?)) {
 
     }
 

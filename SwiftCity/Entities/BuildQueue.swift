@@ -4,33 +4,37 @@ struct BuildQueue {
     
     let href : String
     
-    let queue : [BuildQueueItem]
+    let queue : [BuildQueueItem]?
     
     init?(dictionary: [String: AnyObject]) {
         guard let count = dictionary["count"] as? Int,
-              let href = dictionary["href"] as? String,
-              let queueDictionary = dictionary["build"] as? [[String: AnyObject]]
+              let href = dictionary["href"] as? String
         else {
             return nil
         }
         
-        
-        
-        let queue = queueDictionary.map { (dictionary: [String : AnyObject]) -> BuildQueueItem? in
-            return BuildQueueItem(dictionary: dictionary)
-        }.filter { (item: BuildQueueItem?) -> Bool in
-            return item != nil
-        }.map { (item: BuildQueueItem?) -> BuildQueueItem in
-            return item!
+        if let queueDictionary = dictionary["build"] as? [[String: AnyObject]] {
+            let queue = queueDictionary.map { (dictionary: [String : AnyObject]) -> BuildQueueItem? in
+                return BuildQueueItem(dictionary: dictionary)
+            }.filter { (item: BuildQueueItem?) -> Bool in
+                return item != nil
+            }.map { (item: BuildQueueItem?) -> BuildQueueItem in
+                return item!
+            }
+            
+            guard count > 0 && queue.count == queueDictionary.count else {
+                return nil
+            }
+            
+            self.queue = queue
         }
-        
-        guard queue.count == queueDictionary.count else {
-            return nil
+        else
+        {
+            self.queue = nil
         }
         
         self.count = count
         self.href = href
-        self.queue = queue
     }
 }
 

@@ -26,13 +26,19 @@ This project is inspired by [TeamCitySharp](https://github.com/stack72/teamcitys
   - [ ] VCS Roots
 - [ ] Integration Tests
 - [ ] Swift Package Manager support
-- [ ] Cocoapods support
+- [x] Cocoapods support
 
 ## Licence
 [MIT](http://tombuildsstuff.mit-license.org)
 
 ## Contributing
 Send a pull request, ideally with tests :)
+
+## Installing
+We're using Cocoapods - so just:
+```
+pod 'SwiftCity', '0.0.1'
+```
 
 ## Documentation
 _Be aware the TeamCity API provides fields based on permissions - so if you're not seeing a field which you expect, check this first.._

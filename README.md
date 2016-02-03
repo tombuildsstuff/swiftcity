@@ -11,7 +11,7 @@ This project is inspired by [TeamCitySharp](https://github.com/stack72/teamcitys
   - [ ] Build Agent Pools
   - [x] Build Queue
   - [x] Projects
-  - [ ] Server Details
+  - [x] Server Information
   - [ ] Users
   - [ ] User Groups
   - [ ] VCS Roots
@@ -37,7 +37,7 @@ Send a pull request, ideally with tests :)
 ## Installing
 We're using Cocoapods - so just:
 ```
-pod 'SwiftCity', '0.0.1'
+pod 'SwiftCity', '0.0.2'
 ```
 
 ## Documentation
@@ -105,6 +105,15 @@ client.buildTypesById("Example_BuildConfig", successful: { (type: BuildType) -> 
 ```
 client.buildQueue({ (queue: BuildQueue) -> () in
     print(queue.queue)
+}) { (error: NSError) -> () in
+    print("Error: \(error)")
+}
+```
+
+### Retrieve the Server Information
+```
+client.serverInformation({ (info: ServerInformation) -> () in
+    print(info)
 }) { (error: NSError) -> () in
     print("Error: \(error)")
 }

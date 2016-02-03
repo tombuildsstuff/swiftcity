@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2404D8931C6276BC004B12AD /* ServerInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2404D8921C6276BC004B12AD /* ServerInformation.swift */; };
+		2404D8951C627814004B12AD /* ServerInformationClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2404D8941C627814004B12AD /* ServerInformationClient.swift */; };
 		24C77A0C1C5CDFAD00831741 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C77A0B1C5CDFAD00831741 /* main.swift */; };
 		24C77A141C5CDFBC00831741 /* ProjectLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C77A131C5CDFBC00831741 /* ProjectLocator.swift */; };
 		24C77A171C5CE30800831741 /* TeamCityConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C77A161C5CE30800831741 /* TeamCityConnection.swift */; };
@@ -55,6 +57,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2404D8921C6276BC004B12AD /* ServerInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServerInformation.swift; path = Entities/ServerInformation.swift; sourceTree = "<group>"; };
+		2404D8941C627814004B12AD /* ServerInformationClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServerInformationClient.swift; path = Connection/Extensions/ServerInformationClient.swift; sourceTree = "<group>"; };
 		24C77A081C5CDFAD00831741 /* SwiftCity */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftCity; sourceTree = BUILT_PRODUCTS_DIR; };
 		24C77A0B1C5CDFAD00831741 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		24C77A131C5CDFBC00831741 /* ProjectLocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectLocator.swift; path = Entities/ProjectLocator.swift; sourceTree = "<group>"; };
@@ -157,6 +161,7 @@
 				24CD0CAC1C5D5AA9004754CA /* VCSRootEntries.swift */,
 				24CD0CAE1C5D5BAC004754CA /* VCSRoot.swift */,
 				24CD0CC81C5F3702004754CA /* SnapshotDependencies.swift */,
+				2404D8921C6276BC004B12AD /* ServerInformation.swift */,
 			);
 			name = Entities;
 			sourceTree = "<group>";
@@ -178,6 +183,7 @@
 				24CD0CB81C5F26CA004754CA /* BuildQueueClient.swift */,
 				24CD0CA61C5D52EA004754CA /* BuildTypesClient.swift */,
 				24CD0CA41C5D52B4004754CA /* ProjectsClient.swift */,
+				2404D8941C627814004B12AD /* ServerInformationClient.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -264,12 +270,14 @@
 				24CD0CAD1C5D5AA9004754CA /* VCSRootEntries.swift in Sources */,
 				24C77A211C5D393B00831741 /* BuildTypes.swift in Sources */,
 				24CD0CC11C5F3096004754CA /* BuildFeature.swift in Sources */,
+				2404D8931C6276BC004B12AD /* ServerInformation.swift in Sources */,
 				24C77A191C5CE74700831741 /* TeamCityClient.swift in Sources */,
 				24CD0CCD1C5F3B0F004754CA /* ArtifactDependency.swift in Sources */,
 				24CD0CC71C5F36F2004754CA /* SnapshotDependency.swift in Sources */,
 				24CD0CA91C5D5309004754CA /* AuthenticationClient.swift in Sources */,
 				24C77A141C5CDFBC00831741 /* ProjectLocator.swift in Sources */,
 				24CD0CBF1C5F2FBC004754CA /* BuildFeatures.swift in Sources */,
+				2404D8951C627814004B12AD /* ServerInformationClient.swift in Sources */,
 				24CD0CA21C5D4DE5004754CA /* VCSRoots.swift in Sources */,
 				24CD0C9E1C5D4A3A004754CA /* Parameters.swift in Sources */,
 			);

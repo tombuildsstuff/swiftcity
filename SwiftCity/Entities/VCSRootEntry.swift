@@ -1,11 +1,9 @@
-struct VCSRootEntry {
-    
-    let id : String
-    
-    let vcsRoot : VCSRoot
-    
-    let checkoutRules: String?
-    
+public struct VCSRootEntry {
+
+    public let id : String
+    public let vcsRoot : VCSRoot
+    public let checkoutRules: String?
+
     init?(dictionary: [String: AnyObject]) {
         guard let id = dictionary["id"] as? String,
               let checkoutRules = dictionary["checkout-rules"] as? String,
@@ -13,7 +11,7 @@ struct VCSRootEntry {
               let vcsRoot = VCSRoot(dictionary: vcsRootDictionary) else {
                 return nil
         }
-        
+
         self.id = id
         self.vcsRoot = vcsRoot
         self.checkoutRules = checkoutRules

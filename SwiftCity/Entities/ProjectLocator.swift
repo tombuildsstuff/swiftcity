@@ -1,12 +1,12 @@
-struct ProjectLocator {
+public struct ProjectLocator {
 
-    let id : String
-    let archived : Bool
-    let description : String
-    let href : String
-    let name : String
-    let webUrl : String
-    
+    public let id : String
+    public let archived : Bool
+    public let description : String
+    public let href : String
+    public let name : String
+    public let webUrl : String
+
     init(dictionary: [String: AnyObject]) {
         self.id = dictionary["id"] as? String ?? ""
         self.archived = dictionary["archived"] as? Bool ?? false

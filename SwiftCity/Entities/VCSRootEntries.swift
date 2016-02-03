@@ -1,15 +1,14 @@
-struct VCSRootEntries {
-    
-    let count : Int
-    
-    let entries : [VCSRootEntry]
-    
+public struct VCSRootEntries {
+
+    public let count : Int
+    public let entries : [VCSRootEntry]
+
     init?(dictionary: [String: AnyObject]) {
         guard let count = dictionary["count"] as? Int,
               let entriesDictionary = dictionary["vcs-root-entry"] as? [[String: AnyObject]] else {
             return nil
         }
-        
+
         // TODO: this needs to become an extension method..
         let entries = entriesDictionary.map { (dictionary: [String : AnyObject]) -> VCSRootEntry? in
             return VCSRootEntry(dictionary: dictionary)
@@ -18,11 +17,11 @@ struct VCSRootEntries {
         }.map { (entry: VCSRootEntry?) -> VCSRootEntry in
             return entry!
         }
-        
+
         guard entries.count == entriesDictionary.count else {
             return nil
         }
-        
+
         self.count = count
         self.entries = entries
     }

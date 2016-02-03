@@ -1,13 +1,13 @@
-struct BuildTypeLocator {
+public struct BuildTypeLocator {
 
-    let id : String
-    let name : String
-    let projectName: String
-    let projectId: String
-    let href: String
-    let templateFlag : Bool?
-    let webUrl: String
-    
+    public let id : String
+    public let name : String
+    public let projectName: String
+    public let projectId: String
+    public let href: String
+    public let templateFlag : Bool?
+    public let webUrl: String
+
     init?(dictionary: [String: AnyObject]) {
         guard let id = dictionary["id"] as? String,
             let name = dictionary["name"] as? String,
@@ -18,9 +18,9 @@ struct BuildTypeLocator {
             else {
                 return nil
         }
-        
+
         let isTemplate = dictionary["templateFlag"] as? Bool
-        
+
         self.id = id
         self.name = name
         self.projectName = projectName

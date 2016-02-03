@@ -8,13 +8,13 @@
 
 import Foundation
 
-class TeamCityClient {
-    
+public class TeamCityClient {
+
     let connection : ITeamCityConnection
-    
-    init(connection: ITeamCityConnection) {
+
+    public init(connection: ITeamCityConnection) {
         self.connection = connection
     }
-    
+
     // TODO: the methods on this class should be classes - not extension methods..
 }

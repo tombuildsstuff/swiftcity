@@ -29,10 +29,10 @@ This project is inspired by [TeamCitySharp](https://github.com/stack72/teamcitys
 - [ ] Cocoapods support
 
 ## Licence
-MIT
+[MIT](http://tombuildsstuff.mit-license.org)
 
 ## Contributing
-
+Send a pull request, ideally with tests :)
 
 ## Documentation
 _Be aware the TeamCity API provides fields based on permissions - so if you're not seeing a field which you expect, check this first.._

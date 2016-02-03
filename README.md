@@ -14,7 +14,7 @@ This project is inspired by [TeamCitySharp](https://github.com/stack72/teamcitys
   - [x] Server Information
   - [ ] Users
   - [ ] User Groups
-  - [ ] VCS Roots
+  - [x] VCS Roots
 - [ ] Editable Endpoints
   - [ ] Builds
   - [ ] Build Agents
@@ -37,7 +37,7 @@ Send a pull request, ideally with tests :)
 ## Installing
 We're using Cocoapods - so just:
 ```
-pod 'SwiftCity', '0.0.2'
+pod 'SwiftCity', '0.0.3'
 ```
 
 ## Documentation
@@ -114,6 +114,24 @@ client.buildQueue({ (queue: BuildQueue) -> () in
 ```
 client.serverInformation({ (info: ServerInformation) -> () in
     print(info)
+}) { (error: NSError) -> () in
+    print("Error: \(error)")
+}
+```
+
+### List All VCS Roots
+```
+client.allVcsRoots({ (roots: VCSRoots) -> () in
+    print(roots)
+}) { (error: NSError) -> () in
+    print("Error: \(error)")
+}
+```
+
+### Retrieve a VCS Root by ID
+```
+client.vcsRootById("Puppet_Github", successful: { (root: VCSRoot?) -> () in
+    print(root)
 }) { (error: NSError) -> () in
     print("Error: \(error)")
 }

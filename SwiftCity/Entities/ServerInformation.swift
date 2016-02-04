@@ -1,14 +1,14 @@
 public struct ServerInformation {
 
-    let version: String
-    let versionMajor: Int
-    let versionMinor: Int
-    let startTime: String
-    let currentTime: String
-    let buildNumber: String
-    let buildDate: String
-    let internalId: String
-    let webUrl: String
+    public let version: String
+    public let versionMajor: Int
+    public let versionMinor: Int
+    public let startTime: String
+    public let currentTime: String
+    public let buildNumber: String
+    public let buildDate: String
+    public let internalId: String
+    public let webUrl: String
     
     init?(dictionary: [String: AnyObject]) {
         guard let version = dictionary["version"] as? String,

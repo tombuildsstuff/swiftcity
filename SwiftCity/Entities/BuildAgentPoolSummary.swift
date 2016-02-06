@@ -1,4 +1,4 @@
-public struct BuildAgentPool {
+public struct BuildAgentPoolSummary {
     
     public let id: Int
     public let name: String

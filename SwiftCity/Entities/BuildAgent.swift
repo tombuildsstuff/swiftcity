@@ -8,7 +8,7 @@ public struct BuildAgent {
     public let upToDate: Bool
     public let ip: String?
     public let properties: Parameters?
-    public let pool: BuildAgentPool
+    public let pool: BuildAgentPoolSummary
     
     init?(dictionary: [String: AnyObject]) {
         guard let agent = BuildAgentSummary(dictionary: dictionary),
@@ -17,7 +17,7 @@ public struct BuildAgent {
               let authorized = dictionary["authorized"] as? Bool,
               let upToDate = dictionary["uptodate"] as? Bool,
               let poolDictionary = dictionary["pool"] as? [String: AnyObject],
-              let pool = BuildAgentPool(dictionary: poolDictionary)
+              let pool = BuildAgentPoolSummary(dictionary: poolDictionary)
         else {
             return nil
         }

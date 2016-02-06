@@ -1,4 +1,4 @@
-public struct Group {
+public struct GroupSummary {
     
     public let key: String
     public let name: String

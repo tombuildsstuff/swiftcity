@@ -1,7 +1,7 @@
 public struct Groups {
     
     public let count: Int
-    public let groups: [Group]
+    public let groups: [GroupSummary]
     
     init?(dictionary: [String: AnyObject]) {
         guard let count = dictionary["count"] as? Int,
@@ -10,12 +10,12 @@ public struct Groups {
                 return nil
         }
         
-        let groups = groupsDictionary.map { (dictionary: [String : AnyObject]) -> Group? in
-            return Group(dictionary: dictionary)
-            }.filter { (group: Group?) -> Bool in
-                return group != nil
-            }.map { (group: Group?) -> Group in
-                return group!
+        let groups = groupsDictionary.map { (dictionary: [String : AnyObject]) -> GroupSummary? in
+            return GroupSummary(dictionary: dictionary)
+        }.filter { (group: GroupSummary?) -> Bool in
+            return group != nil
+        }.map { (group: GroupSummary?) -> GroupSummary in
+            return group!
         }
         
         guard groups.count == groupsDictionary.count else {

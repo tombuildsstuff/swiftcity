@@ -1,13 +1,11 @@
 public struct BuildAgents {
     
     public let count : Int
-    public let href: String
+    public let href: String?
     public let agents: [BuildAgentSummary]?
     
     init?(dictionary: [String: AnyObject]) {
-        guard let count = dictionary["count"] as? Int,
-              let href = dictionary["href"] as? String
-        else {
+        guard let count = dictionary["count"] as? Int else {
             return nil
         }
         
@@ -28,7 +26,7 @@ public struct BuildAgents {
         }
         
         self.count = count
-        self.href = href
+        self.href = dictionary["href"] as? String
     }
     
 }

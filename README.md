@@ -217,3 +217,13 @@ client.allBuildAgentPools({ (pools: BuildAgentPools) -> () in
     print(error)
 }
 ```
+
+### Retrieve a Build Agent Pool by ID
+```
+client.buildAgentPoolById(1, successful: { (agent: BuildAgentPool?) -> () in
+    print(agent)
+}) { (error: NSError) -> () in
+    print("Error: \(error)")
+}
+```
+

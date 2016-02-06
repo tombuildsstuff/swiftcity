@@ -36,6 +36,7 @@
 		24CAEB4E1C6657190071AD21 /* BuildAgentPoolSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CAEB4D1C6657190071AD21 /* BuildAgentPoolSummary.swift */; };
 		24CAEB501C665B1E0071AD21 /* BuildAgentPools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CAEB4F1C665B1E0071AD21 /* BuildAgentPools.swift */; };
 		24CAEB521C665BE80071AD21 /* BuildAgentPoolsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CAEB511C665BE80071AD21 /* BuildAgentPoolsClient.swift */; };
+		24CAEB561C665D010071AD21 /* BuildAgentPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CAEB551C665D010071AD21 /* BuildAgentPool.swift */; };
 		24CD0C9E1C5D4A3A004754CA /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CD0C9D1C5D4A3A004754CA /* Parameters.swift */; };
 		24CD0CA01C5D4B99004754CA /* Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CD0C9F1C5D4B99004754CA /* Parameter.swift */; };
 		24CD0CA21C5D4DE5004754CA /* VCSRoots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CD0CA11C5D4DE5004754CA /* VCSRoots.swift */; };
@@ -106,6 +107,7 @@
 		24CAEB4D1C6657190071AD21 /* BuildAgentPoolSummary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BuildAgentPoolSummary.swift; path = Entities/BuildAgentPoolSummary.swift; sourceTree = "<group>"; };
 		24CAEB4F1C665B1E0071AD21 /* BuildAgentPools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BuildAgentPools.swift; path = Entities/BuildAgentPools.swift; sourceTree = "<group>"; };
 		24CAEB511C665BE80071AD21 /* BuildAgentPoolsClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BuildAgentPoolsClient.swift; path = Connection/Extensions/BuildAgentPoolsClient.swift; sourceTree = "<group>"; };
+		24CAEB551C665D010071AD21 /* BuildAgentPool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BuildAgentPool.swift; path = Entities/BuildAgentPool.swift; sourceTree = "<group>"; };
 		24CD0C9D1C5D4A3A004754CA /* Parameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Parameters.swift; path = Entities/Parameters.swift; sourceTree = "<group>"; };
 		24CD0C9F1C5D4B99004754CA /* Parameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Parameter.swift; path = Entities/Parameter.swift; sourceTree = "<group>"; };
 		24CD0CA11C5D4DE5004754CA /* VCSRoots.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VCSRoots.swift; path = Entities/VCSRoots.swift; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 				24CAEB4B1C6655AC0071AD21 /* BuildAgent.swift */,
 				24CAEB4F1C665B1E0071AD21 /* BuildAgentPools.swift */,
 				24CAEB4D1C6657190071AD21 /* BuildAgentPoolSummary.swift */,
+				24CAEB551C665D010071AD21 /* BuildAgentPool.swift */,
 				24CAEB471C6654DD0071AD21 /* BuildAgentSummary.swift */,
 				24CD0CC01C5F3096004754CA /* BuildFeature.swift */,
 				24CD0CBE1C5F2FBC004754CA /* BuildFeatures.swift */,
@@ -321,6 +324,7 @@
 				24CD0CAB1C5D58B1004754CA /* BuildType.swift in Sources */,
 				24CAEB4E1C6657190071AD21 /* BuildAgentPoolSummary.swift in Sources */,
 				24B5A5E71C662C610017F282 /* Group.swift in Sources */,
+				24CAEB561C665D010071AD21 /* BuildAgentPool.swift in Sources */,
 				243D25A51C628B940011F160 /* VCSRoot.swift in Sources */,
 				24CD0CA51C5D52B4004754CA /* ProjectsClient.swift in Sources */,
 				24CD0CB91C5F26CA004754CA /* BuildQueueClient.swift in Sources */,

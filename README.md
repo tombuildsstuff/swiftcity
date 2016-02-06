@@ -37,7 +37,7 @@ Send a pull request, ideally with tests :)
 ## Installing
 We're using Cocoapods - so just:
 ```
-pod 'SwiftCity', '0.0.6'
+pod 'SwiftCity', '0.0.7'
 ```
 
 ## Documentation

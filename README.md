@@ -4,9 +4,9 @@ A TeamCity API Client written in Swift
 This is a _Work-In-Progress_ - with more endpoints coming soon.
 This project is inspired by [TeamCitySharp](https://github.com/stack72/teamcitysharp).
 
-## To Do
-- [ ] Read-Only Endpoints:
-  - [ ] Builds
+## Roadmap / To Do
+- [x] Read-Only Endpoints:
+  - [x] Builds
   - [x] Build Agents
   - [x] Build Agent Pools
   - [x] Build Queue
@@ -226,3 +226,25 @@ client.buildAgentPoolById(1, successful: { (agent: BuildAgentPool?) -> () in
     print("Error: \(error)")
 }
 ```
+
+### List All Builds
+```
+let start = 10
+let count = 10
+client.allBuilds(start, count: count, successful: { (builds: Builds) -> () in
+    print(builds)
+}) { (error: NSError) -> () in
+    print("Error: \(error)")
+}
+```
+
+### Retrieve a Build by ID
+```
+client.buildById(1561, successful: { (build: Build?) -> () in
+    print(build)
+}) { (error: NSError) -> () in
+    print("Error: \(error)")
+}
+```
+
+

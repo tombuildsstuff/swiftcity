@@ -84,8 +84,22 @@ client.userById(2, successful: { (user: User?) -> () in
 }) { (error: NSError) -> () in
     print("Error: \(error)")
 }
+
+client.allGroups({ (groups: Groups) -> () in
+    print(groups)
+}) { (error: NSError) -> () in
+    print("Error: \(error)")
+}
+
+client.groupByKey("MIDDLE_GROUP", successful: { (group: Group?) -> () in
+    print(group)
+}) { (error:NSError) -> () in
+    print("Error: \(error)")
+}
 */
 
 // as this is sync.. give the tasks a chance to complete..
 sleep(10)
 print("Done")
+
+

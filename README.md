@@ -13,7 +13,7 @@ This project is inspired by [TeamCitySharp](https://github.com/stack72/teamcitys
   - [x] Projects
   - [x] Server Information
   - [x] Users
-  - [ ] User Groups
+  - [x] User Groups
   - [x] VCS Roots
 - [ ] Editable Endpoints
   - [ ] Builds
@@ -37,7 +37,7 @@ Send a pull request, ideally with tests :)
 ## Installing
 We're using Cocoapods - so just:
 ```
-pod 'SwiftCity', '0.0.4'
+pod 'SwiftCity', '0.0.5'
 ```
 
 ## Documentation

@@ -208,3 +208,12 @@ client.buildAgentByName("tc-buildagent-01", successful: { (agent: BuildAgent?) -
     print("Error: \(error)")
 }
 ```
+
+### List All Build Agent Pools
+```
+client.allBuildAgentPools({ (pools: BuildAgentPools) -> () in
+    print(pools)
+}) { (error: NSError) -> () in
+    print(error)
+}
+```

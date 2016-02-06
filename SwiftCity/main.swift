@@ -114,6 +114,12 @@ client.buildAgentByName("tc-buildagent-01", successful: { (agent: BuildAgent?) -
 }) { (error:NSError) -> () in
     print("Error: \(error)")
 }
+
+client.allBuildAgentPools({ (pools: BuildAgentPools) -> () in
+    print(pools)
+}) { (error: NSError) -> () in
+    print(error)
+}
 */
 
 // as this is sync.. give the tasks a chance to complete..

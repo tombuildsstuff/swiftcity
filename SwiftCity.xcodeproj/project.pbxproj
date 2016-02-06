@@ -34,6 +34,8 @@
 		24CAEB4A1C6654F80071AD21 /* BuildAgentsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CAEB491C6654F80071AD21 /* BuildAgentsClient.swift */; };
 		24CAEB4C1C6655AC0071AD21 /* BuildAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CAEB4B1C6655AC0071AD21 /* BuildAgent.swift */; };
 		24CAEB4E1C6657190071AD21 /* BuildAgentPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CAEB4D1C6657190071AD21 /* BuildAgentPool.swift */; };
+		24CAEB501C665B1E0071AD21 /* BuildAgentPools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CAEB4F1C665B1E0071AD21 /* BuildAgentPools.swift */; };
+		24CAEB521C665BE80071AD21 /* BuildAgentPoolsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CAEB511C665BE80071AD21 /* BuildAgentPoolsClient.swift */; };
 		24CD0C9E1C5D4A3A004754CA /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CD0C9D1C5D4A3A004754CA /* Parameters.swift */; };
 		24CD0CA01C5D4B99004754CA /* Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CD0C9F1C5D4B99004754CA /* Parameter.swift */; };
 		24CD0CA21C5D4DE5004754CA /* VCSRoots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CD0CA11C5D4DE5004754CA /* VCSRoots.swift */; };
@@ -102,6 +104,8 @@
 		24CAEB491C6654F80071AD21 /* BuildAgentsClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BuildAgentsClient.swift; path = Connection/Extensions/BuildAgentsClient.swift; sourceTree = "<group>"; };
 		24CAEB4B1C6655AC0071AD21 /* BuildAgent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BuildAgent.swift; path = Entities/BuildAgent.swift; sourceTree = "<group>"; };
 		24CAEB4D1C6657190071AD21 /* BuildAgentPool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BuildAgentPool.swift; path = Entities/BuildAgentPool.swift; sourceTree = "<group>"; };
+		24CAEB4F1C665B1E0071AD21 /* BuildAgentPools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BuildAgentPools.swift; path = Entities/BuildAgentPools.swift; sourceTree = "<group>"; };
+		24CAEB511C665BE80071AD21 /* BuildAgentPoolsClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BuildAgentPoolsClient.swift; path = Connection/Extensions/BuildAgentPoolsClient.swift; sourceTree = "<group>"; };
 		24CD0C9D1C5D4A3A004754CA /* Parameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Parameters.swift; path = Entities/Parameters.swift; sourceTree = "<group>"; };
 		24CD0C9F1C5D4B99004754CA /* Parameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Parameter.swift; path = Entities/Parameter.swift; sourceTree = "<group>"; };
 		24CD0CA11C5D4DE5004754CA /* VCSRoots.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VCSRoots.swift; path = Entities/VCSRoots.swift; sourceTree = "<group>"; };
@@ -175,6 +179,7 @@
 				24CD0CCE1C5F40F2004754CA /* AgentRequirement.swift */,
 				24CAEB451C6653910071AD21 /* BuildAgents.swift */,
 				24CAEB4B1C6655AC0071AD21 /* BuildAgent.swift */,
+				24CAEB4F1C665B1E0071AD21 /* BuildAgentPools.swift */,
 				24CAEB4D1C6657190071AD21 /* BuildAgentPool.swift */,
 				24CAEB471C6654DD0071AD21 /* BuildAgentSummary.swift */,
 				24CD0CC01C5F3096004754CA /* BuildFeature.swift */,
@@ -228,6 +233,7 @@
 			children = (
 				24CD0CA81C5D5309004754CA /* AuthenticationClient.swift */,
 				24CAEB491C6654F80071AD21 /* BuildAgentsClient.swift */,
+				24CAEB511C665BE80071AD21 /* BuildAgentPoolsClient.swift */,
 				24CD0CB81C5F26CA004754CA /* BuildQueueClient.swift */,
 				24CD0CA61C5D52EA004754CA /* BuildTypesClient.swift */,
 				24B5A5E41C662BC80017F282 /* GroupsClient.swift */,
@@ -304,6 +310,7 @@
 				24CD0CD11C5F4113004754CA /* AgentRequirements.swift in Sources */,
 				24CD0CB51C5D6A22004754CA /* BuildStepSummary.swift in Sources */,
 				24CAEB481C6654DD0071AD21 /* BuildAgentSummary.swift in Sources */,
+				24CAEB501C665B1E0071AD21 /* BuildAgentPools.swift in Sources */,
 				24CD0CAF1C5D5BAC004754CA /* VCSRootSummary.swift in Sources */,
 				24CD0CA01C5D4B99004754CA /* Parameter.swift in Sources */,
 				24CAEB4C1C6655AC0071AD21 /* BuildAgent.swift in Sources */,
@@ -332,6 +339,7 @@
 				24CAEB4A1C6654F80071AD21 /* BuildAgentsClient.swift in Sources */,
 				2431261F1C62920C000855D7 /* Users.swift in Sources */,
 				24CD0CAD1C5D5AA9004754CA /* VCSRootEntries.swift in Sources */,
+				24CAEB521C665BE80071AD21 /* BuildAgentPoolsClient.swift in Sources */,
 				24C77A211C5D393B00831741 /* BuildTypes.swift in Sources */,
 				24CD0CC11C5F3096004754CA /* BuildFeature.swift in Sources */,
 				243D25A31C628A370011F160 /* VCSRootsClient.swift in Sources */,

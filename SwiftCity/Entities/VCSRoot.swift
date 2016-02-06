@@ -1,15 +1,15 @@
 public struct VCSRoot {
     
-    let id: String
-    let name: String
-    let vcsName: String
-    let status: String
+    public let id: String
+    public let name: String
+    public let vcsName: String
+    public let status: String
     // TODO: proper date parsing..
-    let lastChecked: String
-    let href: String
+    public let lastChecked: String
+    public let href: String
     
-    let project: ProjectLocator
-    let properties: Parameters
+    public let project: ProjectLocator
+    public let properties: Parameters
     
     init?(dictionary: [String: AnyObject]) {
         guard let id = dictionary["id"] as? String,

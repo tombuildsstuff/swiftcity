@@ -3,21 +3,9 @@ public struct Group {
     public let group : GroupSummary
     public let parentGroups: Groups
     public let childGroups: Groups
-    public let users: Users // ?!
-    public let roles: Roles // ?!
+    public let users: Users
+    public let roles: Roles
     public let properties: Parameters
-    
-    /*
-    <group key="TOP_LEVEL_GROUP" name="Top Level Group" href="/guestAuth/app/rest/userGroups/key:TOP_LEVEL_GROUP">
-    <parent-groups count="0"/>
-    <child-groups count="1">
-    <group key="MIDDLE_GROUP" name="Middle Group" href="/guestAuth/app/rest/userGroups/key:MIDDLE_GROUP"/>
-    </child-groups>
-    <users count="0"/>
-    <roles/>
-    <properties count="0" href="/app/rest/userGroups/key:TOP_LEVEL_GROUP/properties"/>
-    </group>
-    */
     
     init?(dictionary: [String: AnyObject]) {
         guard let group = GroupSummary(dictionary: dictionary),

@@ -4,11 +4,11 @@ A TeamCity API Client written in Swift
 This is a _Work-In-Progress_ - with more endpoints coming soon.
 This project is inspired by [TeamCitySharp](https://github.com/stack72/teamcitysharp).
 
-## To Do
-- [ ] Read-Only Endpoints:
-  - [ ] Builds
-  - [ ] Build Agents
-  - [ ] Build Agent Pools
+## Roadmap / To Do
+- [x] Read-Only Endpoints:
+  - [x] Builds
+  - [x] Build Agents
+  - [x] Build Agent Pools
   - [x] Build Queue
   - [x] Projects
   - [x] Server Information
@@ -37,7 +37,7 @@ Send a pull request, ideally with tests :)
 ## Installing
 We're using Cocoapods - so just:
 ```
-pod 'SwiftCity', '0.0.5'
+pod 'SwiftCity', '0.0.6'
 ```
 
 ## Documentation
@@ -136,3 +136,115 @@ client.vcsRootById("Puppet_Github", successful: { (root: VCSRoot?) -> () in
     print("Error: \(error)")
 }
 ```
+
+### List All Users
+```
+client.allUsers({ (users: Users) -> () in
+    print(users)
+}) { (error: NSError) -> () in
+    print("Error: \(error)")
+}
+```
+
+### Retrieve a User by Username
+```
+client.userByName("example_api_user", successful: { (user: User?) -> () in
+    print(user)
+}) { (error: NSError) -> () in
+    print("Error: \(error)")
+}
+```
+
+### Retrieve a User by ID
+```
+client.userById(2, successful: { (user: User?) -> () in
+    print(user)
+}) { (error: NSError) -> () in
+    print("Error: \(error)")
+}
+```
+
+### List All Groups
+```
+client.allGroups({ (groups: Groups) -> () in
+    print(groups)
+}) { (error: NSError) -> () in
+    print("Error: \(error)")
+}
+```
+
+### Retrieve a Group by Key
+```
+client.groupByKey("MIDDLE_GROUP", successful: { (group: Group?) -> () in
+    print(group)
+}) { (error:NSError) -> () in
+    print("Error: \(error)")
+}
+```
+
+### List All Build Agents
+```
+client.allBuildAgents({ (agents: BuildAgents) -> () in
+    print(agents)
+}) { (error:NSError) -> () in
+    print("Error: \(error)")
+}
+```
+
+### Retrieve a Build Agent by ID
+```
+client.buildAgentById(1, successful: { (agent: BuildAgent?) -> () in
+    print(agent)
+}) { (error:NSError) -> () in
+    print("Error: \(error)")
+}
+```
+
+### Retrieve a Build Agent by Name
+```
+client.buildAgentByName("tc-buildagent-01", successful: { (agent: BuildAgent?) -> () in
+    print(agent)
+}) { (error:NSError) -> () in
+    print("Error: \(error)")
+}
+```
+
+### List All Build Agent Pools
+```
+client.allBuildAgentPools({ (pools: BuildAgentPools) -> () in
+    print(pools)
+}) { (error: NSError) -> () in
+    print(error)
+}
+```
+
+### Retrieve a Build Agent Pool by ID
+```
+client.buildAgentPoolById(1, successful: { (agent: BuildAgentPool?) -> () in
+    print(agent)
+}) { (error: NSError) -> () in
+    print("Error: \(error)")
+}
+```
+
+### List All Builds
+```
+let start = 10
+let count = 10
+client.allBuilds(start, count: count, successful: { (builds: Builds) -> () in
+    print(builds)
+}) { (error: NSError) -> () in
+    print("Error: \(error)")
+}
+```
+
+### Retrieve a Build by ID
+```
+client.buildById(1561, successful: { (build: Build?) -> () in
+    print(build)
+}) { (error: NSError) -> () in
+    print("Error: \(error)")
+}
+```
+
+

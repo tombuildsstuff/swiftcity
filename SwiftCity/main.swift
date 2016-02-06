@@ -96,6 +96,48 @@ client.groupByKey("MIDDLE_GROUP", successful: { (group: Group?) -> () in
 }) { (error:NSError) -> () in
     print("Error: \(error)")
 }
+
+client.allBuildAgents({ (agents: BuildAgents) -> () in
+    print(agents)
+}) { (error:NSError) -> () in
+    print("Error: \(error)")
+}
+
+client.buildAgentById(1, successful: { (agent: BuildAgent?) -> () in
+    print(agent)
+}) { (error:NSError) -> () in
+    print("Error: \(error)")
+}
+
+client.buildAgentByName("tc-buildagent-01", successful: { (agent: BuildAgent?) -> () in
+    print(agent)
+}) { (error:NSError) -> () in
+    print("Error: \(error)")
+}
+
+client.allBuildAgentPools({ (pools: BuildAgentPools) -> () in
+    print(pools)
+}) { (error: NSError) -> () in
+    print("Error: \(error)")
+}
+
+client.buildAgentPoolById(1, successful: { (agent: BuildAgentPool?) -> () in
+    print(agent)
+}) { (error: NSError) -> () in
+    print("Error: \(error)")
+}
+
+client.allBuilds(10, count: 10, successful: { (builds: Builds) -> () in
+    print(builds)
+}) { (error: NSError) -> () in
+    print("Error: \(error)")
+}
+
+client.buildById(1561, successful: { (build: Build?) -> () in
+    print(build)
+}) { (error: NSError) -> () in
+    print("Error: \(error)")
+}
 */
 
 // as this is sync.. give the tasks a chance to complete..

@@ -8,7 +8,7 @@ This project is inspired by [TeamCitySharp](https://github.com/stack72/teamcitys
 - [ ] Read-Only Endpoints:
   - [ ] Builds
   - [x] Build Agents
-  - [ ] Build Agent Pools
+  - [x] Build Agent Pools
   - [x] Build Queue
   - [x] Projects
   - [x] Server Information

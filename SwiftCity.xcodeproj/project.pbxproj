@@ -20,6 +20,7 @@
 		24B5A5E11C6625500017F282 /* GroupSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B5A5E01C6625500017F282 /* GroupSummary.swift */; };
 		24B5A5E31C6625BD0017F282 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B5A5E21C6625BD0017F282 /* User.swift */; };
 		24B5A5E51C662BC80017F282 /* GroupsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B5A5E41C662BC80017F282 /* GroupsClient.swift */; };
+		24B5A5E71C662C610017F282 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B5A5E61C662C610017F282 /* Group.swift */; };
 		24C77A0C1C5CDFAD00831741 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C77A0B1C5CDFAD00831741 /* main.swift */; };
 		24C77A141C5CDFBC00831741 /* ProjectLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C77A131C5CDFBC00831741 /* ProjectLocator.swift */; };
 		24C77A171C5CE30800831741 /* TeamCityConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C77A161C5CE30800831741 /* TeamCityConnection.swift */; };
@@ -81,6 +82,7 @@
 		24B5A5E01C6625500017F282 /* GroupSummary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GroupSummary.swift; path = Entities/GroupSummary.swift; sourceTree = "<group>"; };
 		24B5A5E21C6625BD0017F282 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Entities/User.swift; sourceTree = "<group>"; };
 		24B5A5E41C662BC80017F282 /* GroupsClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GroupsClient.swift; path = Connection/Extensions/GroupsClient.swift; sourceTree = "<group>"; };
+		24B5A5E61C662C610017F282 /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Group.swift; path = Entities/Group.swift; sourceTree = "<group>"; };
 		24C77A081C5CDFAD00831741 /* SwiftCity */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftCity; sourceTree = BUILT_PRODUCTS_DIR; };
 		24C77A0B1C5CDFAD00831741 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		24C77A131C5CDFBC00831741 /* ProjectLocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProjectLocator.swift; path = Entities/ProjectLocator.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 				24C77A221C5D3BA400831741 /* BuildTypeLocator.swift */,
 				24C77A201C5D393B00831741 /* BuildTypes.swift */,
 				24B5A5E01C6625500017F282 /* GroupSummary.swift */,
+				24B5A5E61C662C610017F282 /* Group.swift */,
 				24B5A5DE1C6624F80017F282 /* Groups.swift */,
 				24C77A1C1C5CFE4D00831741 /* Projects.swift */,
 				24C77A131C5CDFBC00831741 /* ProjectLocator.swift */,
@@ -292,6 +295,7 @@
 				2431261B1C629007000855D7 /* UsersClient.swift in Sources */,
 				24C77A1F1C5D002400831741 /* Project.swift in Sources */,
 				24CD0CAB1C5D58B1004754CA /* BuildType.swift in Sources */,
+				24B5A5E71C662C610017F282 /* Group.swift in Sources */,
 				243D25A51C628B940011F160 /* VCSRoot.swift in Sources */,
 				24CD0CA51C5D52B4004754CA /* ProjectsClient.swift in Sources */,
 				24CD0CB91C5F26CA004754CA /* BuildQueueClient.swift in Sources */,

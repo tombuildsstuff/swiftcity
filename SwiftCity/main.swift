@@ -54,6 +54,18 @@ client.serverInformation({ (info: ServerInformation) -> () in
 }) { (error: NSError) -> () in
     print("Error: \(error)")
 }
+
+client.allVcsRoots({ (roots: VCSRoots) -> () in
+    print(roots)
+}) { (error: NSError) -> () in
+    print("Error: \(error)")
+}
+
+client.vcsRootById("Puppet_Github", successful: { (root: VCSRoot?) -> () in
+    print(root)
+}) { (error: NSError) -> () in
+    print("Error: \(error)")
+}
 */
 
 // as this is sync.. give the tasks a chance to complete..

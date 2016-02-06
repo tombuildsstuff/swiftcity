@@ -7,7 +7,7 @@ This project is inspired by [TeamCitySharp](https://github.com/stack72/teamcitys
 ## To Do
 - [ ] Read-Only Endpoints:
   - [ ] Builds
-  - [ ] Build Agents
+  - [x] Build Agents
   - [ ] Build Agent Pools
   - [x] Build Queue
   - [x] Projects
@@ -37,7 +37,7 @@ Send a pull request, ideally with tests :)
 ## Installing
 We're using Cocoapods - so just:
 ```
-pod 'SwiftCity', '0.0.5'
+pod 'SwiftCity', '0.0.6'
 ```
 
 ## Documentation
@@ -133,6 +133,78 @@ client.allVcsRoots({ (roots: VCSRoots) -> () in
 client.vcsRootById("Puppet_Github", successful: { (root: VCSRoot?) -> () in
     print(root)
 }) { (error: NSError) -> () in
+    print("Error: \(error)")
+}
+```
+
+### List All Users
+```
+client.allUsers({ (users: Users) -> () in
+    print(users)
+}) { (error: NSError) -> () in
+    print("Error: \(error)")
+}
+```
+
+### Retrieve a User by Username
+```
+client.userByName("example_api_user", successful: { (user: User?) -> () in
+    print(user)
+}) { (error: NSError) -> () in
+    print("Error: \(error)")
+}
+```
+
+### Retrieve a User by ID
+```
+client.userById(2, successful: { (user: User?) -> () in
+    print(user)
+}) { (error: NSError) -> () in
+    print("Error: \(error)")
+}
+```
+
+### List All Groups
+```
+client.allGroups({ (groups: Groups) -> () in
+    print(groups)
+}) { (error: NSError) -> () in
+    print("Error: \(error)")
+}
+```
+
+### Retrieve a Group by Key
+```
+client.groupByKey("MIDDLE_GROUP", successful: { (group: Group?) -> () in
+    print(group)
+}) { (error:NSError) -> () in
+    print("Error: \(error)")
+}
+```
+
+### List All Build Agents
+```
+client.allBuildAgents({ (agents: BuildAgents) -> () in
+    print(agents)
+}) { (error:NSError) -> () in
+    print("Error: \(error)")
+}
+```
+
+### Retrieve a Build Agent by ID
+```
+client.buildAgentById(1, successful: { (agent: BuildAgent?) -> () in
+    print(agent)
+}) { (error:NSError) -> () in
+    print("Error: \(error)")
+}
+```
+
+### Retrieve a Build Agent by Name
+```
+client.buildAgentByName("tc-buildagent-01", successful: { (agent: BuildAgent?) -> () in
+    print(agent)
+}) { (error:NSError) -> () in
     print("Error: \(error)")
 }
 ```

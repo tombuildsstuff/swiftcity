@@ -8,8 +8,8 @@
 
 import Foundation
 
-let connection = TeamCityConnection(server: "http://172.16.85.129")
-//let connection = TeamCityConnection(server: "http://172.16.85.129", username: "example_api_user", password: "password")
+//let connection = TeamCityConnection(server: "http://172.16.85.129")
+let connection = TeamCityConnection(server: "http://172.16.85.129", username: "example_api_user", password: "password")
 let client = TeamCityClient(connection: connection)
 
 /*
@@ -102,13 +102,19 @@ client.allBuildAgents({ (agents: BuildAgents) -> () in
 }) { (error:NSError) -> () in
     print("Error: \(error)")
 }
-*/
 
 client.buildAgentById(1, successful: { (agent: BuildAgent?) -> () in
     print(agent)
 }) { (error:NSError) -> () in
     print("Error: \(error)")
 }
+
+client.buildAgentByName("tc-buildagent-01", successful: { (agent: BuildAgent?) -> () in
+    print(agent)
+}) { (error:NSError) -> () in
+    print("Error: \(error)")
+}
+*/
 
 // as this is sync.. give the tasks a chance to complete..
 sleep(10)

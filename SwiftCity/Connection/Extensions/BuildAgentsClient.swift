@@ -21,5 +21,16 @@ extension TeamCityClient {
             failure(error)
         }
     }
+    
+    
+    public func buildAgentByName(name: String, successful: (BuildAgent?) -> (), failure: (NSError) -> ()) {
+        self.connection.get("/app/rest/agents/name:\(name)", acceptHeader: "application/json", done: { (data) -> () in
+            let json = try! NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments) as! [String: AnyObject]
+            let agent = BuildAgent(dictionary: json)
+            successful(agent)
+        }) { (error: NSError) -> () in
+            failure(error)
+        }
+    }
 
 }

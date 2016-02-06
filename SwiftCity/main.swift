@@ -66,6 +66,24 @@ client.vcsRootById("Puppet_Github", successful: { (root: VCSRoot?) -> () in
 }) { (error: NSError) -> () in
     print("Error: \(error)")
 }
+
+client.allUsers({ (users: Users) -> () in
+    print(users)
+}) { (error: NSError) -> () in
+    print("Error: \(error)")
+}
+
+client.userByName("example_api_user", successful: { (user: User?) -> () in
+    print(user)
+}) { (error: NSError) -> () in
+    print("Error: \(error)")
+}
+
+client.userById(2, successful: { (user: User?) -> () in
+    print(user)
+}) { (error: NSError) -> () in
+    print("Error: \(error)")
+}
 */
 
 // as this is sync.. give the tasks a chance to complete..

@@ -98,6 +98,12 @@ client.groupByKey("MIDDLE_GROUP", successful: { (group: Group?) -> () in
 }
 */
 
+client.allBuildAgents({ (agents: BuildAgents) -> () in
+    print(agents)
+    }) { (error:NSError) -> () in
+        print("Error: \(error)")
+}
+
 // as this is sync.. give the tasks a chance to complete..
 sleep(10)
 print("Done")

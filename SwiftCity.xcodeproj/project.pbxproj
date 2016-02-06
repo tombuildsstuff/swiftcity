@@ -14,6 +14,17 @@
 		2431261F1C62920C000855D7 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2431261E1C62920C000855D7 /* Users.swift */; };
 		243D25A31C628A370011F160 /* VCSRootsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243D25A21C628A370011F160 /* VCSRootsClient.swift */; };
 		243D25A51C628B940011F160 /* VCSRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243D25A41C628B940011F160 /* VCSRoot.swift */; };
+		24901A6F1C666EDF00AF197A /* BuildSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24901A6E1C666EDF00AF197A /* BuildSummary.swift */; };
+		24901A711C666F4200AF197A /* Builds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24901A701C666F4200AF197A /* Builds.swift */; };
+		24901A731C66735300AF197A /* TriggeredBuild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24901A721C66735300AF197A /* TriggeredBuild.swift */; };
+		24901A751C6673BD00AF197A /* Build.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24901A741C6673BD00AF197A /* Build.swift */; };
+		24901A771C66753500AF197A /* VCSChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24901A761C66753500AF197A /* VCSChange.swift */; };
+		24901A791C6675C300AF197A /* LastChanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24901A781C6675C300AF197A /* LastChanges.swift */; };
+		24901A7B1C6677A100AF197A /* Locator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24901A7A1C6677A100AF197A /* Locator.swift */; };
+		24901A7D1C6679B800AF197A /* VCSRootInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24901A7C1C6679B800AF197A /* VCSRootInstance.swift */; };
+		24901A7F1C667A3D00AF197A /* VCSRevision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24901A7E1C667A3D00AF197A /* VCSRevision.swift */; };
+		24901A811C667A9000AF197A /* VCSRevisions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24901A801C667A9000AF197A /* VCSRevisions.swift */; };
+		24901A831C667BD000AF197A /* BuildCancellationInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24901A821C667BD000AF197A /* BuildCancellationInformation.swift */; };
 		24B5A5DB1C66209D0017F282 /* Role.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B5A5DA1C66209D0017F282 /* Role.swift */; };
 		24B5A5DD1C6620A80017F282 /* Roles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B5A5DC1C6620A80017F282 /* Roles.swift */; };
 		24B5A5DF1C6624F80017F282 /* Groups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B5A5DE1C6624F80017F282 /* Groups.swift */; };
@@ -37,6 +48,7 @@
 		24CAEB501C665B1E0071AD21 /* BuildAgentPools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CAEB4F1C665B1E0071AD21 /* BuildAgentPools.swift */; };
 		24CAEB521C665BE80071AD21 /* BuildAgentPoolsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CAEB511C665BE80071AD21 /* BuildAgentPoolsClient.swift */; };
 		24CAEB561C665D010071AD21 /* BuildAgentPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CAEB551C665D010071AD21 /* BuildAgentPool.swift */; };
+		24CAEB581C6663AE0071AD21 /* BuildsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CAEB571C6663AE0071AD21 /* BuildsClient.swift */; };
 		24CD0C9E1C5D4A3A004754CA /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CD0C9D1C5D4A3A004754CA /* Parameters.swift */; };
 		24CD0CA01C5D4B99004754CA /* Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CD0C9F1C5D4B99004754CA /* Parameter.swift */; };
 		24CD0CA21C5D4DE5004754CA /* VCSRoots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CD0CA11C5D4DE5004754CA /* VCSRoots.swift */; };
@@ -84,6 +96,17 @@
 		2431261E1C62920C000855D7 /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Users.swift; path = Entities/Users.swift; sourceTree = "<group>"; };
 		243D25A21C628A370011F160 /* VCSRootsClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VCSRootsClient.swift; path = Connection/Extensions/VCSRootsClient.swift; sourceTree = "<group>"; };
 		243D25A41C628B940011F160 /* VCSRoot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VCSRoot.swift; path = Entities/VCSRoot.swift; sourceTree = "<group>"; };
+		24901A6E1C666EDF00AF197A /* BuildSummary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BuildSummary.swift; path = Entities/BuildSummary.swift; sourceTree = "<group>"; };
+		24901A701C666F4200AF197A /* Builds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Builds.swift; path = Entities/Builds.swift; sourceTree = "<group>"; };
+		24901A721C66735300AF197A /* TriggeredBuild.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TriggeredBuild.swift; path = Entities/TriggeredBuild.swift; sourceTree = "<group>"; };
+		24901A741C6673BD00AF197A /* Build.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Build.swift; path = Entities/Build.swift; sourceTree = "<group>"; };
+		24901A761C66753500AF197A /* VCSChange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VCSChange.swift; path = Entities/VCSChange.swift; sourceTree = "<group>"; };
+		24901A781C6675C300AF197A /* LastChanges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LastChanges.swift; path = Entities/LastChanges.swift; sourceTree = "<group>"; };
+		24901A7A1C6677A100AF197A /* Locator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Locator.swift; path = Entities/Locator.swift; sourceTree = "<group>"; };
+		24901A7C1C6679B800AF197A /* VCSRootInstance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VCSRootInstance.swift; path = Entities/VCSRootInstance.swift; sourceTree = "<group>"; };
+		24901A7E1C667A3D00AF197A /* VCSRevision.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VCSRevision.swift; path = Entities/VCSRevision.swift; sourceTree = "<group>"; };
+		24901A801C667A9000AF197A /* VCSRevisions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VCSRevisions.swift; path = Entities/VCSRevisions.swift; sourceTree = "<group>"; };
+		24901A821C667BD000AF197A /* BuildCancellationInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BuildCancellationInformation.swift; path = Entities/BuildCancellationInformation.swift; sourceTree = "<group>"; };
 		24B5A5DA1C66209D0017F282 /* Role.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Role.swift; path = Entities/Role.swift; sourceTree = "<group>"; };
 		24B5A5DC1C6620A80017F282 /* Roles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Roles.swift; path = Entities/Roles.swift; sourceTree = "<group>"; };
 		24B5A5DE1C6624F80017F282 /* Groups.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Groups.swift; path = Entities/Groups.swift; sourceTree = "<group>"; };
@@ -108,6 +131,7 @@
 		24CAEB4F1C665B1E0071AD21 /* BuildAgentPools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BuildAgentPools.swift; path = Entities/BuildAgentPools.swift; sourceTree = "<group>"; };
 		24CAEB511C665BE80071AD21 /* BuildAgentPoolsClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BuildAgentPoolsClient.swift; path = Connection/Extensions/BuildAgentPoolsClient.swift; sourceTree = "<group>"; };
 		24CAEB551C665D010071AD21 /* BuildAgentPool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BuildAgentPool.swift; path = Entities/BuildAgentPool.swift; sourceTree = "<group>"; };
+		24CAEB571C6663AE0071AD21 /* BuildsClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BuildsClient.swift; path = Connection/Extensions/BuildsClient.swift; sourceTree = "<group>"; };
 		24CD0C9D1C5D4A3A004754CA /* Parameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Parameters.swift; path = Entities/Parameters.swift; sourceTree = "<group>"; };
 		24CD0C9F1C5D4B99004754CA /* Parameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Parameter.swift; path = Entities/Parameter.swift; sourceTree = "<group>"; };
 		24CD0CA11C5D4DE5004754CA /* VCSRoots.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VCSRoots.swift; path = Entities/VCSRoots.swift; sourceTree = "<group>"; };
@@ -185,6 +209,7 @@
 				24CAEB4D1C6657190071AD21 /* BuildAgentPoolSummary.swift */,
 				24CAEB551C665D010071AD21 /* BuildAgentPool.swift */,
 				24CAEB471C6654DD0071AD21 /* BuildAgentSummary.swift */,
+				24901A821C667BD000AF197A /* BuildCancellationInformation.swift */,
 				24CD0CC01C5F3096004754CA /* BuildFeature.swift */,
 				24CD0CBE1C5F2FBC004754CA /* BuildFeatures.swift */,
 				24CD0CBA1C5F2728004754CA /* BuildQueue.swift */,
@@ -195,10 +220,15 @@
 				24CD0CC21C5F33B8004754CA /* BuildTriggers.swift */,
 				24CD0CAA1C5D58B1004754CA /* BuildType.swift */,
 				24C77A221C5D3BA400831741 /* BuildTypeLocator.swift */,
+				24901A6E1C666EDF00AF197A /* BuildSummary.swift */,
+				24901A701C666F4200AF197A /* Builds.swift */,
+				24901A741C6673BD00AF197A /* Build.swift */,
 				24C77A201C5D393B00831741 /* BuildTypes.swift */,
 				24B5A5E01C6625500017F282 /* GroupSummary.swift */,
 				24B5A5E61C662C610017F282 /* Group.swift */,
 				24B5A5DE1C6624F80017F282 /* Groups.swift */,
+				24901A781C6675C300AF197A /* LastChanges.swift */,
+				24901A7A1C6677A100AF197A /* Locator.swift */,
 				24C77A1C1C5CFE4D00831741 /* Projects.swift */,
 				24C77A131C5CDFBC00831741 /* ProjectLocator.swift */,
 				24C77A1E1C5D002400831741 /* Project.swift */,
@@ -207,13 +237,18 @@
 				24B5A5DC1C6620A80017F282 /* Roles.swift */,
 				24B5A5DA1C66209D0017F282 /* Role.swift */,
 				24CD0CC61C5F36F2004754CA /* SnapshotDependency.swift */,
+				24901A761C66753500AF197A /* VCSChange.swift */,
+				24901A801C667A9000AF197A /* VCSRevisions.swift */,
+				24901A7E1C667A3D00AF197A /* VCSRevision.swift */,
 				24CD0CA11C5D4DE5004754CA /* VCSRoots.swift */,
 				243D25A41C628B940011F160 /* VCSRoot.swift */,
 				24CD0CB01C5D5C36004754CA /* VCSRootEntry.swift */,
 				24CD0CAC1C5D5AA9004754CA /* VCSRootEntries.swift */,
+				24901A7C1C6679B800AF197A /* VCSRootInstance.swift */,
 				24CD0CAE1C5D5BAC004754CA /* VCSRootSummary.swift */,
 				24CD0CC81C5F3702004754CA /* SnapshotDependencies.swift */,
 				2404D8921C6276BC004B12AD /* ServerInformation.swift */,
+				24901A721C66735300AF197A /* TriggeredBuild.swift */,
 				2431261C1C6291A4000855D7 /* UserSummary.swift */,
 				2431261E1C62920C000855D7 /* Users.swift */,
 				24B5A5E21C6625BD0017F282 /* User.swift */,
@@ -239,6 +274,7 @@
 				24CAEB511C665BE80071AD21 /* BuildAgentPoolsClient.swift */,
 				24CD0CB81C5F26CA004754CA /* BuildQueueClient.swift */,
 				24CD0CA61C5D52EA004754CA /* BuildTypesClient.swift */,
+				24CAEB571C6663AE0071AD21 /* BuildsClient.swift */,
 				24B5A5E41C662BC80017F282 /* GroupsClient.swift */,
 				24CD0CA41C5D52B4004754CA /* ProjectsClient.swift */,
 				2404D8941C627814004B12AD /* ServerInformationClient.swift */,
@@ -306,17 +342,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				24CD0CBB1C5F2728004754CA /* BuildQueue.swift in Sources */,
+				24901A791C6675C300AF197A /* LastChanges.swift in Sources */,
 				24C77A0C1C5CDFAD00831741 /* main.swift in Sources */,
+				24901A751C6673BD00AF197A /* Build.swift in Sources */,
 				24CD0CA71C5D52EA004754CA /* BuildTypesClient.swift in Sources */,
+				24901A7F1C667A3D00AF197A /* VCSRevision.swift in Sources */,
 				24B5A5DD1C6620A80017F282 /* Roles.swift in Sources */,
+				24901A831C667BD000AF197A /* BuildCancellationInformation.swift in Sources */,
 				24CD0CB71C5D6BDA004754CA /* BuildSteps.swift in Sources */,
 				24CD0CD11C5F4113004754CA /* AgentRequirements.swift in Sources */,
+				24901A811C667A9000AF197A /* VCSRevisions.swift in Sources */,
 				24CD0CB51C5D6A22004754CA /* BuildStepSummary.swift in Sources */,
 				24CAEB481C6654DD0071AD21 /* BuildAgentSummary.swift in Sources */,
 				24CAEB501C665B1E0071AD21 /* BuildAgentPools.swift in Sources */,
 				24CD0CAF1C5D5BAC004754CA /* VCSRootSummary.swift in Sources */,
 				24CD0CA01C5D4B99004754CA /* Parameter.swift in Sources */,
 				24CAEB4C1C6655AC0071AD21 /* BuildAgent.swift in Sources */,
+				24901A7B1C6677A100AF197A /* Locator.swift in Sources */,
 				2431261D1C6291A4000855D7 /* UserSummary.swift in Sources */,
 				24C77A171C5CE30800831741 /* TeamCityConnection.swift in Sources */,
 				2431261B1C629007000855D7 /* UsersClient.swift in Sources */,
@@ -328,14 +370,18 @@
 				243D25A51C628B940011F160 /* VCSRoot.swift in Sources */,
 				24CD0CA51C5D52B4004754CA /* ProjectsClient.swift in Sources */,
 				24CD0CB91C5F26CA004754CA /* BuildQueueClient.swift in Sources */,
+				24901A771C66753500AF197A /* VCSChange.swift in Sources */,
 				24C77A1D1C5CFE4D00831741 /* Projects.swift in Sources */,
 				24B5A5E51C662BC80017F282 /* GroupsClient.swift in Sources */,
 				24CD0CB11C5D5C36004754CA /* VCSRootEntry.swift in Sources */,
 				24CD0CCB1C5F3A96004754CA /* ArtifactDependencies.swift in Sources */,
+				24901A731C66735300AF197A /* TriggeredBuild.swift in Sources */,
 				24CD0CBD1C5F2C2E004754CA /* BuildQueueItem.swift in Sources */,
 				24CD0CC31C5F33B8004754CA /* BuildTriggers.swift in Sources */,
 				24B5A5E11C6625500017F282 /* GroupSummary.swift in Sources */,
+				24901A711C666F4200AF197A /* Builds.swift in Sources */,
 				24CD0CCF1C5F40F2004754CA /* AgentRequirement.swift in Sources */,
+				24CAEB581C6663AE0071AD21 /* BuildsClient.swift in Sources */,
 				24CD0CC91C5F3702004754CA /* SnapshotDependencies.swift in Sources */,
 				24CD0CC51C5F348D004754CA /* BuildTrigger.swift in Sources */,
 				24B5A5DB1C66209D0017F282 /* Role.swift in Sources */,
@@ -347,9 +393,11 @@
 				24C77A211C5D393B00831741 /* BuildTypes.swift in Sources */,
 				24CD0CC11C5F3096004754CA /* BuildFeature.swift in Sources */,
 				243D25A31C628A370011F160 /* VCSRootsClient.swift in Sources */,
+				24901A6F1C666EDF00AF197A /* BuildSummary.swift in Sources */,
 				2404D8931C6276BC004B12AD /* ServerInformation.swift in Sources */,
 				24C77A191C5CE74700831741 /* TeamCityClient.swift in Sources */,
 				24CD0CCD1C5F3B0F004754CA /* ArtifactDependency.swift in Sources */,
+				24901A7D1C6679B800AF197A /* VCSRootInstance.swift in Sources */,
 				24CD0CC71C5F36F2004754CA /* SnapshotDependency.swift in Sources */,
 				24CD0CA91C5D5309004754CA /* AuthenticationClient.swift in Sources */,
 				24C77A141C5CDFBC00831741 /* ProjectLocator.swift in Sources */,

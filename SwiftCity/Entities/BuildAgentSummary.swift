@@ -1,22 +1,20 @@
 public struct BuildAgentSummary {
     
-    public let id: Int
+    public let id: Int?
     public let name: String
     public let typeId: Int
-    public let href: String
+    public let href: String?
     
     init?(dictionary: [String: AnyObject]) {
-        guard let id = dictionary["id"] as? Int,
-            let name = dictionary["name"] as? String,
-            let typeId = dictionary["typeId"] as? Int,
-            let href = dictionary["href"] as? String else {
+        guard let name = dictionary["name"] as? String,
+              let typeId = dictionary["typeId"] as? Int else {
                 return nil
         }
         
-        self.id = id
+        self.id = dictionary["id"] as? Int
         self.name = name
         self.typeId = typeId
-        self.href = href
+        self.href = dictionary["href"] as? String
     }
     
 }

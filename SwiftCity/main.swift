@@ -126,6 +126,18 @@ client.buildAgentPoolById(1, successful: { (agent: BuildAgentPool?) -> () in
 }) { (error: NSError) -> () in
     print("Error: \(error)")
 }
+
+client.allBuilds(10, count: 10, successful: { (builds: Builds) -> () in
+    print(builds)
+}) { (error: NSError) -> () in
+    print("Error: \(error)")
+}
+
+client.buildById(1561, successful: { (build: Build?) -> () in
+    print(build)
+}) { (error: NSError) -> () in
+    print("Error: \(error)")
+}
 */
 
 // as this is sync.. give the tasks a chance to complete..

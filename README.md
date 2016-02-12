@@ -24,6 +24,7 @@ This project is inspired by [TeamCitySharp](https://github.com/stack72/teamcitys
   - [ ] Users
   - [ ] User Groups
   - [ ] VCS Roots
+- [ ] Proper Error Handling
 - [ ] Integration Tests
 - [ ] Swift Package Manager support
 - [x] Cocoapods support

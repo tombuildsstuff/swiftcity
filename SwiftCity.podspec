@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
 
                               This is a _Work-In-Progress_ - with more endpoints coming soon.
                               This project is inspired by [TeamCitySharp](https://github.com/stack72/teamcitysharp).
- 
+
                               See the [README](https://github.com/tombuildsstuff/swiftcity) for more info
                                ```
                               DESC
@@ -23,6 +23,7 @@ Pod::Spec.new do |s|
   s.framework              = "Foundation"
   s.ios.deployment_target  = "8.0"
   s.tvos.deployment_target = "9.0"
+  s.osx.deployment_target  = "10.10"
   s.requires_arc           = true
 
 end

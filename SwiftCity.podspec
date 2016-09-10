@@ -18,8 +18,8 @@ Pod::Spec.new do |s|
   s.author                 = "tombuildsstuff"
   s.social_media_url       = "http://twitter.com/tombuildsstuff"
   s.source                 = { :git => "https://github.com/tombuildsstuff/swiftcity.git", :tag => "0.1.1" }
-  s.source_files           = "SwiftCity", "SwiftCity/**/*.{h,swift}"
-  s.exclude_files          = "SwiftCity/**/main.swift"
+  s.source_files           = "Sources/SwiftCity", "Sources/SwiftCity/**/*.{h,swift}"
+  s.exclude_files          = "Sources/SwiftCity/**/main.swift"
   s.framework              = "Foundation"
   s.ios.deployment_target  = "8.0"
   s.tvos.deployment_target = "9.0"

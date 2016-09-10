@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name                  = "SwiftCity"
-  s.version               = "0.1.1"
+  s.version               = "0.2"
   s.summary               = "A TeamCity API Client written in Swift."
   s.description           = <<-DESC
                               # SwiftCity
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.license                = "MIT"
   s.author                 = "tombuildsstuff"
   s.social_media_url       = "http://twitter.com/tombuildsstuff"
-  s.source                 = { :git => "https://github.com/tombuildsstuff/swiftcity.git", :tag => "0.1.1" }
+  s.source                 = { :git => "https://github.com/tombuildsstuff/swiftcity.git", :tag => "0.2" }
   s.source_files           = "Sources/SwiftCity", "Sources/SwiftCity/**/*.{h,swift}"
   s.exclude_files          = "Sources/SwiftCity/**/main.swift"
   s.framework              = "Foundation"

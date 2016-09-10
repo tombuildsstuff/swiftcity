@@ -26,7 +26,7 @@ This project is inspired by [TeamCitySharp](https://github.com/stack72/teamcitys
   - [ ] VCS Roots
 - [ ] Proper Error Handling
 - [ ] Integration Tests
-- [ ] Swift Package Manager support
+- [x] Swift Package Manager support
 - [x] Cocoapods support
 
 ## Licence
@@ -36,9 +36,23 @@ This project is inspired by [TeamCitySharp](https://github.com/stack72/teamcitys
 Send a pull request, ideally with tests :)
 
 ## Installing
-We're using Cocoapods - so just:
+We're using both Cocoapods and Swift Package Manager.
+
+For Swift Package Manager - use:
 ```
-pod 'SwiftCity', '0.1'
+import PackageDescription
+
+let package = Package(
+    name: "my-application",
+    dependencies: [
+        .Package(url: "https://github.com/tombuildsstuff/SwiftCity.git", majorVersion: 0, minor: 2)
+    ]
+)
+```
+
+For Cocoapods - use:
+```
+pod 'SwiftCity', '0.2'
 ```
 
 ## Documentation
@@ -247,5 +261,3 @@ client.buildById(1561, successful: { (build: Build?) -> () in
     print("Error: \(error)")
 }
 ```
-
-

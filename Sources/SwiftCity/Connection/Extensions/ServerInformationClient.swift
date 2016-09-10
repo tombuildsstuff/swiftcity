@@ -2,12 +2,12 @@ import Foundation
 
 extension TeamCityClient {
     
-    public func serverInformation(successful: (ServerInformation) -> (), failure: (NSError) -> ()) {
+    public func serverInformation(successful: @escaping (ServerInformation) -> (), failure: @escaping (Error) -> ()) {
         self.connection.get("/app/rest/server", acceptHeader: "application/json", done: { (data) -> () in
-            let json = try! NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments) as! [String: AnyObject]
+            let json = try! JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.allowFragments) as! [String: AnyObject]
             let information = ServerInformation(dictionary: json)!
             successful(information)
-        }) { (error: NSError) -> () in
+        }) { (error: Error) -> () in
             failure(error)
         }
     }

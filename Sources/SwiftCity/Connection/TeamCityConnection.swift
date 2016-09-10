@@ -5,11 +5,11 @@ public protocol ITeamCityConnection {
     init(server: String)
     init(server: String, username: String, password: String)
 
-    func get(endpoint: String, done: (data: NSData) -> (), error: (NSError) -> ())
+    func get(_ endpoint: String, done: @escaping (_ data: Data) -> (), error: @escaping (Error) -> ())
+    
+    func get(_ endpoint: String, acceptHeader: String?, done: @escaping (_ data: Data) -> (), error: @escaping (Error) -> ())
 
-    func get(endpoint: String, acceptHeader: String?, done: (data: NSData) -> (), error: (NSError) -> ())
-
-    func post<T>(endpoint: String, body: T, done: (statusCode: Int, error: NSError?))
+    func post<T>(_ endpoint: String, body: T, done: (statusCode: Int, error: Error?))
 
 }
 
@@ -36,28 +36,29 @@ public class TeamCityConnection : ITeamCityConnection {
         self.shouldConnectAsGuest = false
     }
 
-    public func get(endpoint: String, done: (data: NSData) -> (), error: (NSError) -> ()) {
+    public func get(_ endpoint: String, done: @escaping (_ data: Data) -> (), error: @escaping (Error) -> ()) {
         self.get(endpoint, acceptHeader: nil, done: done, error: error)
     }
 
-    public func get(endpoint: String, acceptHeader: String?, done: (data: NSData) -> (), error: (NSError) -> ()) {
+    public func get(_ endpoint: String, acceptHeader: String?, done: @escaping (_ data: Data) -> (), error: @escaping (Error) -> ()) {
         let requestUrl = "\(self.serverUrl)\(endpoint)"
-        let url = NSURL(string: requestUrl)!
-        let request = NSMutableURLRequest(URL: url)
+        let url = URL(string: requestUrl)!
+        var request = URLRequest(url: url)
         if let accept = acceptHeader {
             request.addValue(accept, forHTTPHeaderField: "Accept")
         }
 
         if (!self.shouldConnectAsGuest) {
-            let auth = NSString(string: "\(self.username ?? ""):\(self.password ?? "")").dataUsingEncoding(NSUTF8StringEncoding)!
-            let encodedAuth = auth.base64EncodedStringWithOptions(NSDataBase64EncodingOptions.EncodingEndLineWithCarriageReturn)
+            let authText = "\(self.username ?? ""):\(self.password ?? "")"
+            let auth = authText.data(using: .utf8)
+            let encodedAuth = auth?.base64EncodedString(options: Data.Base64EncodingOptions.endLineWithCarriageReturn)
             request.addValue("Basic \(encodedAuth)", forHTTPHeaderField: "Authorization")
         }
 
-        let config = NSURLSessionConfiguration.defaultSessionConfiguration()
-        let session = NSURLSession(configuration: config)
+        let config = URLSessionConfiguration.default
+        let session = URLSession(configuration: config)
 
-        let task = session.dataTaskWithRequest(request, completionHandler: {(data, response, err) in
+        let task = session.dataTask(with: request, completionHandler: {(data, response, err) in
 
             if let anError = err {
                 error(anError)
@@ -65,20 +66,20 @@ public class TeamCityConnection : ITeamCityConnection {
             }
 
             if (self.debugging) {
-                let body = NSString(data: data!, encoding: NSUTF8StringEncoding)!
+                let body = String(data: data!, encoding: String.Encoding.utf8)
                 print("---")
                 print(body)
                 print("---")
             }
 
-            done(data: data!)
+            done(data!)
 
         })
 
         task.resume()
     }
 
-    public func post<T>(endpoint: String, body: T, done: (statusCode: Int, error: NSError?)) {
+    public func post<T>(_ endpoint: String, body: T, done: (statusCode: Int, error: Error?)) {
 
     }
 

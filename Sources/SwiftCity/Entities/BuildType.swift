@@ -16,12 +16,12 @@ public struct BuildType {
             return nil
         }
 
-        func map<T>(dictionary: [String: AnyObject]?, builder: (dictionary: [String: AnyObject]) -> T?) -> T? {
+        func map<T>(_ dictionary: [String: AnyObject]?, builder: (_ dictionary: [String: AnyObject]) -> T?) -> T? {
             guard let properties = dictionary else {
                 return nil
             }
 
-            return builder(dictionary: properties)
+            return builder(properties)
         }
 
         self.agentRequirements = map(dictionary["agent-requirements"] as? [String: AnyObject], builder: AgentRequirements.init)

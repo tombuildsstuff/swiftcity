@@ -13,12 +13,12 @@ public struct Project {
     init?(dictionary: [String: AnyObject]) {
         self.project = ProjectLocator(dictionary: dictionary)
 
-        func map<T>(dictionary: [String: AnyObject]?, builder: (dictionary: [String: AnyObject]) -> T?) -> T? {
+        func map<T>(_ dictionary: [String: AnyObject]?, builder: (_ dictionary: [String: AnyObject]) -> T?) -> T? {
             guard let properties = dictionary else {
                 return nil
             }
 
-            return builder(dictionary: properties)
+            return builder(properties)
         }
 
         self.parentProject = map(dictionary["parentProject"] as? [String: AnyObject], builder: ProjectLocator.init)
